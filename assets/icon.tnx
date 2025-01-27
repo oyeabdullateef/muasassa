@@ -1,0 +1,741 @@
+remix icon 
+<i class="ri-close-line"></i>
+<i class="ri-moon-line"></i>
+<i class="ri-menu-2-line"></i>
+<i class="ri-youtube-line"></i>
+
+
+font awesome
+<i class="fa-solid fa-utensils"></i>
+<i class="fa-solid fa-droplet"></i>
+<i class="fa-brands fa-envira"></i>
+<i class="fa-solid fa-check"></i>
+<i class="fa-solid fa-quote-right"></i>
+<i class="fa-solid fa-paper-plane"></i>
+<i class="fa-solid fa-phone"></i>
+<i class="fa-solid fa-envelope"></i>
+<i class="fa-solid fa-location-dot"></i>
+<i class="fa-brands fa-facebook-f"></i>
+<i class="fa-brands fa-twitter"></i>
+<i class="fa-brands fa-square-instagram"></i>
+<i class="fa-solid fa-arrow-up"></i>
+<i class="fa-solid fa-cloud-sun-rain"></i>
+<i class="fa-regular fa-clock"></i>
+
+style="
+        background-image: url('img/background.jpg');
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+
+        background-size: cover;
+      "
+      class="md:w-20 md:h-20"
+
+
+
+      <div
+      style="
+        background-image: url('img/Hero\ Section.jpg');
+
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 110vh;
+      "
+    >
+
+
+
+
+
+
+ <div
+      style="
+        background-image: url('img/Hero\ Section.jpg');
+        width: 100%;
+        height: 90vh;
+        background-position: center;
+
+        background-size: cover;
+      "
+    >
+      <header class="fixed top-0 left-0 w-full z-50 md:fixed md:top-10">
+        <nav
+          class="container relative h-14 flex justify-between items-center md:justify-evenly"
+        >
+          <div>
+            <a href="#" class="">
+              <img
+                src="img/logo img.png"
+                alt="logo image"
+                class="w-14 md:w-20 md:mt-10 mt-5"
+              />
+            </a>
+          </div>
+
+          <div
+            class="hidden absolute top-0 left-0 w-full py-4 bg-greenColorLight broder-b broder-secondaryColor md:bg-transparent md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto md:mt-10"
+            id="nav-menu"
+          >
+            <ul class="flex flex-col text-center gap-3 md:flex-row md:gap-5">
+              <li>
+                <a
+                  href="#home"
+                  class="nav__link hover:text-secondaryColor ease-in duration-200"
+                  >Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#about"
+                  class="nav__link hover:text-secondaryColor ease-in duration-200"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#service"
+                  class="nav__link hover:text-secondaryColor ease-in duration-200"
+                  >Service/Activities</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#event"
+                  class="nav__link hover:text-secondaryColor ease-in duration-200"
+                  >Events</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#gallery"
+                  class="nav__link hover:text-secondaryColor ease-in duration-200"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#blog"
+                  class="nav__link hover:text-secondaryColor ease-in duration-200"
+                  >Blogs</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#project"
+                  class="nav__link hover:text-secondaryColor ease-in duration-200"
+                  >Projects</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contact"
+                  class="nav__link hover:text-secondaryColor ease-in duration-200"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#donate"
+                  class="nav__link broder rounded-lg bg-greenColorLight p-3 ease-out duration-200"
+                  >Donate Now</a
+                >
+              </li>
+            </ul>
+            <div
+              class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden"
+              id="close-menu"
+            >
+              <i class="ri-close-line"></i>
+            </div>
+          </div>
+          <div class="md:hidden" id="hamburger">
+            <i class="ri-menu-2-line cursor-pointer ml-4 text-xl"></i>
+          </div>
+        </nav>
+      </header>
+
+      <section id="home">
+        <div
+          class="container flex flex-col items-center gap-10 md:mt-10 md:max-w-96 md:items-start md:mx-20"
+        >
+          <div class="text-center md:text-left">
+            <h1 class="home__title">
+              Helping each other can make world better!
+            </h1>
+            <div class="separator mx-auto md:mx-1"></div>
+            <p class="paragraph">
+              we seek out world changer and difference makers around the
+              globe,and equip them to fulfill thier unique purpose.
+            </p>
+            <div
+              class="text-center md:text-left mt-5 md:flex md:flex-row md:gap-5 gap-5 mb-24 md:mb-0"
+            >
+              <a href="#" class="btn btn-secondary">Learn more </a>
+              <a href="#" class="btn btn-primary">Donate now</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div
+        class="hidden md:text-base md:flex md:flex-row items-center justify-evenly mx-auto mt-10 bg-greenColorLight text-whiteColor md:py-6 py-20"
+      >
+        <div class="text-center">
+          <h1 class="home_title">417</h1>
+          <p class="paragraph">Members</p>
+        </div>
+
+        <div class="text-center">
+          <h1 class="home_title">10</h1>
+          <p class="paragraph">Branches</p>
+        </div>
+        <div class="text-center">
+          <h1 class="home_title">25</h1>
+          <p class="paragraph">Projects</p>
+        </div>
+        <div class="text-center">
+          <h1 class="home_title">37</h1>
+          <p class="paragraph">Program</p>
+        </div>
+        <div class="text-center hidden md:block">
+          <img src="img/CTA.jpg" alt="" class="w-24 h-24 rounded-full" />
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section id="about">
+        <div
+          class="bg-teal-50 min-h-60 flex items-center justify-center px-8 my-5"
+        >
+          <!-- Container -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center max-w-7xl"
+          >
+            <!-- Image Section -->
+            <div class="relative">
+              <!-- Green Box -->
+              <div
+                class="absolute bg-greenColorLight w-60 h-80 -top-3 -left-10"
+              ></div>
+              <!-- Image -->
+              <div class="relative bg-white p-4 shadow-lg">
+                <img
+                  src="img/about 1.png"
+                  alt="People helping each other"
+                  class="min-w-full h-72 object-cover border-4 border-white"
+                />
+              </div>
+            </div>
+
+            <!-- Text Section -->
+            <div class="space-y-4 ml-10">
+              <h1 class="text-3xl font-bold text-gray-900 font-oswald mt-5">
+                About MNIDF
+              </h1>
+              <p class="text-gray-700 font-dmsans">
+                The secret to happiness lies in helping others. Never
+                underestimate the difference YOU can make in the lives of the
+                poor, the abused, and the helpless. The secret to happiness lies
+                in helping others. Never underestimate the difference YOU can
+                make in the lives of the poor, the abused, and the helpless.
+              </p>
+              <p class="text-gray-700">
+                The secret to happiness lies in helping others. Never
+                underestimate the difference YOU can make in the lives of the
+                poor, the abused, and the helpless.
+              </p>
+              <!-- Button -->
+              <a
+                href="#"
+                class="inline-block bg-greenColorLight text-white px-6 py-3 font-medium hover:bg-green-700"
+              >
+                Learn More →
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-green-50 py-10">
+          <div class="saparator"></div>
+          <div class="max-w-7xl mx-auto px-4">
+            <!-- Title and Description -->
+            <div
+              class="text-center mb-8 flex flex-row py-2 justify-between gap-10"
+            >
+              <h2 class="text-3xl font-bold text-gray-800 font-oswald ml-2">
+                Core Values
+              </h2>
+              <p class="text-gray-600 max-w-2xl text-left mx-auto">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                diam nonumy tempor invidunt ut labore et magna aliquyam erat.
+              </p>
+            </div>
+
+            <!-- Cards Container -->
+            <div
+              class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto"
+            >
+              <!-- Card 1 -->
+              <div class="bg-green-100 p-4 rounded-lg shadow-md text-left">
+                <div class="mb-4">
+                  <div
+                    class="w-12 h-12 mx-auto bg-green-600 text-white rounded-full flex items-center justify-center"
+                  >
+                    <span class="text-2xl font-bold">●</span>
+                    <!-- Replace with your icon -->
+                  </div>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800">Unity</h3>
+                <p class="text-gray-600 mt-2">
+                  Strengthening bonds within the Muslim Ummah. Strengthening
+                  bonds within the Muslim Ummah.
+                </p>
+              </div>
+
+              <!-- Card 2 -->
+              <div class="bg-green-100 p-4 text-left rounded-lg shadow-md">
+                <div class="mb-4">
+                  <div
+                    class="w-12 h-12 mx-auto bg-green-600 text-white rounded-full flex items-center justify-center"
+                  >
+                    <span class="text-2xl font-bold">●</span>
+                    <!-- Replace with your icon -->
+                  </div>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800">Knowledge</h3>
+                <p class="text-gray-600 mt-2">
+                  Promoting authentic Islamic teachings based on the Qur'an,
+                  Sunnah, and Tijaniyyah principles.
+                </p>
+              </div>
+
+              <!-- Card 3 -->
+              <div class="bg-green-100 p-4 rounded-lg shadow-md text-left">
+                <div class="mb-4">
+                  <div
+                    class="w-12 h-12 mx-auto bg-green-600 text-white rounded-full flex items-center justify-center"
+                  >
+                    <span class="text-2xl font-bold">●</span>
+                    <!-- Replace with your icon -->
+                  </div>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800">Service</h3>
+                <p class="text-gray-600 mt-2">
+                  Dedicated to supporting communities through charity,
+                  education, and guidance to the less privileged.
+                </p>
+              </div>
+
+              <!-- Card 4 -->
+              <div class="bg-green-100 p-4 rounded-lg shadow-md text-left">
+                <div class="mb-4">
+                  <div
+                    class="w-12 h-12 mx-auto bg-green-600 text-white rounded-full flex items-center justify-center"
+                  >
+                    <span class="text-2xl font-bold">●</span>
+                    <!-- Replace with your icon -->
+                  </div>
+                </div>
+                <h3 class="text-lg font-bold text-gray-800">
+                  Spiritual Growth
+                </h3>
+                <p class="text-gray-600 mt-2">
+                  Inspiring individuals to deepen their faith through the
+                  practices of Tijaniyyah Sufism to aid spirituality.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-green-50 py-10">
+          <div class="max-w-7xl mx-auto px-4">
+            <!-- Title -->
+            <div class="text-center mb-8">
+              <h2 class="text-4xl font-bold text-gray-800 font-oswald">
+                Our Branches
+              </h2>
+            </div>
+
+            <!-- Buttons -->
+            <div class="flex justify-start items-start gap-4 mb-6 tabs_wrap">
+              <ul
+                class="flex flex-wrap justify-center md:justify-start text-darkColor text-2xl gap-3"
+              >
+                <li class="btn bg-gray-200 active">Branches</li>
+                <li class="btn bg-gray-200">chapter</li>
+              </ul>
+            </div>
+
+            <!-- Sort Dropdown -->
+            <div class="flex justify-end mb-8">
+              <label class="text-gray-600 mr-2">Sort by:</label>
+              <select
+                id="sortLocation"
+                class="bg-gray-200 text-gray-800 px-4 py-2 rounded-lg"
+              >
+                <option value="location">Location</option>
+                <option value="members">Members</option>
+              </select>
+            </div>
+
+            <!-- Branches Grid -->
+            <div
+              id="branchesGrid"
+              class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-6"
+            >
+              <!-- Branch Item -->
+
+              <div
+                class="branch-item bg-white p-4 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <div>
+                  <span class="text-sm font-bold text-gray-400">01</span>
+                  <h3 class="text-lg font-bold text-gray-800">Agege Branch</h3>
+                  <p class="text-gray-600">Lagos State</p>
+                </div>
+                <div>
+                  <p class="text-green-600 font-bold text-xl">87</p>
+                  <p class="text-gray-500 text-sm">Members</p>
+                </div>
+              </div>
+              <div
+                class="branch-item bg-white p-4 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <div>
+                  <span class="text-sm font-bold text-gray-400">01</span>
+                  <h3 class="text-lg font-bold text-gray-800">Agege Branch</h3>
+                  <p class="text-gray-600">Lagos State</p>
+                </div>
+                <div>
+                  <p class="text-green-600 font-bold text-xl">87</p>
+                  <p class="text-gray-500 text-sm">Members</p>
+                </div>
+              </div>
+              <div
+                class="branch-item bg-white p-4 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <div>
+                  <span class="text-sm font-bold text-gray-400">01</span>
+                  <h3 class="text-lg font-bold text-gray-800">Agege Branch</h3>
+                  <p class="text-gray-600">Lagos State</p>
+                </div>
+                <div>
+                  <p class="text-green-600 font-bold text-xl">87</p>
+                  <p class="text-gray-500 text-sm">Members</p>
+                </div>
+              </div>
+              <div
+                class="branch-item bg-white p-4 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <div>
+                  <span class="text-sm font-bold text-gray-400">01</span>
+                  <h3 class="text-lg font-bold text-gray-800">Agege Branch</h3>
+                  <p class="text-gray-600">Lagos State</p>
+                </div>
+                <div>
+                  <p class="text-green-600 font-bold text-xl">87</p>
+                  <p class="text-gray-500 text-sm">Members</p>
+                </div>
+              </div>
+              <div
+                class="branch-item bg-white p-4 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <div>
+                  <span class="text-sm font-bold text-gray-400">01</span>
+                  <h3 class="text-lg font-bold text-gray-800">Agege Branch</h3>
+                  <p class="text-gray-600">Lagos State</p>
+                </div>
+                <div>
+                  <p class="text-green-600 font-bold text-xl">87</p>
+                  <p class="text-gray-500 text-sm">Members</p>
+                </div>
+              </div>
+              <div
+                class="branch-item bg-white p-4 rounded-lg shadow-md flex justify-between items-center"
+              >
+                <div>
+                  <span class="text-sm font-bold text-gray-400">01</span>
+                  <h3 class="text-lg font-bold text-gray-800">Agege Branch</h3>
+                  <p class="text-gray-600">Lagos State</p>
+                </div>
+                <div>
+                  <p class="text-green-600 font-bold text-xl">87</p>
+                  <p class="text-gray-500 text-sm">Members</p>
+                </div>
+              </div>
+
+              <!-- Repeat the above div for each branch -->
+            </div>
+            <!-- hidde branches -->
+
+            <div class="hidden" id="hidden">
+              <div
+                class="grid grid-cols-1 lg:grid-cols-3 md:grid-cols-3 gap-6 mt-5"
+              >
+                <div
+                  class="hidden-brance branch-item bg-white p-4 rounded-lg shadow-md flex justify-between gap-40 items-center"
+                >
+                  <div>
+                    <span class="text-sm font-bold text-gray-400">01</span>
+                    <h3 class="text-lg font-bold text-gray-800">
+                      Agege Branch
+                    </h3>
+                    <p class="text-gray-600">Lagos State</p>
+                  </div>
+                  <div>
+                    <p class="text-green-600 font-bold text-xl">87</p>
+                    <p class="text-gray-500 text-sm">Members</p>
+                  </div>
+                </div>
+                <div
+                  class="hidden-brance branch-item bg-white p-4 rounded-lg shadow-md flex justify-between items-center"
+                >
+                  <div>
+                    <span class="text-sm font-bold text-gray-400">01</span>
+                    <h3 class="text-lg font-bold text-gray-800">
+                      Agege Branch
+                    </h3>
+                    <p class="text-gray-600">Lagos State</p>
+                  </div>
+                  <div>
+                    <p class="text-green-600 font-bold text-xl">87</p>
+                    <p class="text-gray-500 text-sm">Members</p>
+                  </div>
+                </div>
+                <div
+                  class="hidden-brance branch-item bg-white p-4 rounded-lg shadow-md flex justify-between items-center"
+                >
+                  <div>
+                    <span class="text-sm font-bold text-gray-400">01</span>
+                    <h3 class="text-lg font-bold text-gray-800">
+                      Agege Branch
+                    </h3>
+                    <p class="text-gray-600">Lagos State</p>
+                  </div>
+                  <div>
+                    <p class="text-green-600 font-bold text-xl">87</p>
+                    <p class="text-gray-500 text-sm">Members</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- View All Branches Button -->
+            <div class="text-center mt-8 viewAllBtn">
+              <a
+                id="show_more"
+                class="btn bg-gray-200 px-6 py-3 text-black rounded-lg hover:bg-green-700"
+              >
+                View All Branches
+              </a>
+              <a
+                id="show_less"
+                class="btn bg-gray-200 active px-6 py-3 text-black rounded-lg hover:bg-green-700"
+              >
+                Show less
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission & Vision Section -->
+        <div class="bg-green-50 py-10">
+          <div class="max-w-7xl mx-auto px-4">
+            <div class="mb-8 items-start">
+              <h2 class="text-4xl font-bold text-gray-800 font-oswald">
+                Our Mission & Vision
+              </h2>
+              <p class="text-gray-600 max-w-2xl mt-4">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                diam nonumy tempor invidunt ut labore et magna aliquyam erat.
+              </p>
+            </div>
+
+            <!-- Content Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+              <!-- Images -->
+              <div class="grid grid-rows-2 gap-4">
+                <img
+                  src="img/vission.jpg"
+                  alt="Mission"
+                  class="rounded-sm min-w-full h-40"
+                />
+                <img
+                  src="img/mission.jpg"
+                  alt="Vision"
+                  class="rounded-sm min-w-full h-40"
+                />
+              </div>
+
+              <!-- Text Section -->
+              <div>
+                <div class="flex items-center gap-3">
+                  <h3 class="text-sm font-bold text-darkColor mb-2">
+                    Welcome to MNIDF
+                  </h3>
+                  <div
+                    class="text-sm font-bold text-darkColor mb-2 w-28 h-[2px] bg-greenColorLight"
+                  ></div>
+                </div>
+                <h2 class="text-3xl font-oswald font-bold text-gray-800 mb-4">
+                  Let Us Come Together To Make A Difference!
+                </h2>
+                <p class="text-gray-600 mb-6">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+                  diam nonumy tempor invidunt ut labore et dolore magna aliquyam
+                  erat.
+                </p>
+
+                <!-- Mission & Vision Cards -->
+                <div class="grid grid-cols-2 gap-4">
+                  <!-- Mission Card -->
+                  <div class="bg-whiteColor p-4 rounded-lg shadow-md">
+                    <h4 class="text-2xl font-dmsans font-bold text-gray-800">
+                      Our Mission
+                    </h4>
+                    <p class="text-gray-600 mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+
+                  <!-- Vision Card -->
+                  <div class="bg-whiteColor p-4 rounded-lg shadow-md">
+                    <h4 class="text-2xl font-dmsans font-bold text-gray-800">
+                      Our Vision
+                    </h4>
+                    <p class="text-gray-600 mt-2">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div id="service">
+        <div class="bg-white mt-5">
+          <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <!-- Section Title -->
+            <div class="text-start">
+              <h2 class="text-4xl font-bold text-darkColor font-oswald">
+                Meet the NEC Members
+              </h2>
+              <p class="mt-2 text-4xl text-darkColor font-oswald">(The Team)</p>
+            </div>
+
+            <!-- View All Button -->
+            <div class="text-right mt-6">
+              <a
+                href="#"
+                class="inline-block px-6 py-3 bg-green-600 text-white font-bold rounded-md hover:bg-green-700"
+              >
+                View All NEC Members
+              </a>
+            </div>
+
+            <!-- Team Members -->
+            <div
+              class="mt-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+            >
+              <!-- Member 1 -->
+              <div
+                class="relative bg-white shadow-md rounded-lg overflow-hidden"
+              >
+                <img
+                  src="img/sheu usman (2).jpg"
+                  alt="Giwa Usman Adebayo"
+                  class="w-full h-56 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent"
+                ></div>
+                <div class="absolute bottom-4 left-4 text-white">
+                  <h3 class="text-lg font-bold">Giwa Usman Adebayo</h3>
+                  <p class="text-sm">BOT Chairman</p>
+                  <a href="#" class="mt-2 text-sm underline"
+                    >View Full Profile</a
+                  >
+                </div>
+                <div
+                  class="absolute top-1/2 left-0 transform -translate-y-1/2 bg-green-600 p-2 rounded-full cursor-pointer hover:bg-green-700"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm-2-6a1 1 0 011-1h3a1 1 0 110 2h-3a1 1 0 01-1-1zm-3-4a1 1 0 011-1h6a1 1 0 110 2H6a1 1 0 01-1-1z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+
+              <!-- Member 2 -->
+              <div
+                class="relative bg-white shadow-md rounded-lg overflow-hidden"
+              >
+                <img
+                  src="img/excos-2.jpg"
+                  alt="Adigun Ibraheem"
+                  class="w-full h-56 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent"
+                ></div>
+                <div class="absolute bottom-4 left-4 text-white">
+                  <h3 class="text-lg font-bold">Adigun Ibraheem</h3>
+                  <p class="text-sm">President</p>
+                  <a href="#" class="mt-2 text-sm underline"
+                    >View Full Profile</a
+                  >
+                </div>
+              </div>
+
+              <!-- Member 3 -->
+              <div
+                class="relative bg-white shadow-md rounded-lg overflow-hidden"
+              >
+                <img
+                  src="img/excos 1 (2).jpg"
+                  alt="Hashiru Habibat"
+                  class="w-full h-56 object-cover"
+                />
+                <div
+                  class="absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent"
+                ></div>
+                <div class="absolute bottom-4 left-4 text-white">
+                  <h3 class="text-lg font-bold">Hashiru Habibat</h3>
+                  <p class="text-sm">Vice President (Female)</p>
+                  <a href="#" class="mt-2 text-sm underline"
+                    >View Full Profile</a
+                  >
+                </div>
+                <div
+                  class="absolute top-1/2 right-0 transform -translate-y-1/2 bg-green-600 p-2 rounded-full cursor-pointer hover:bg-green-700"
+                >
+                  <svg
+                    class="h-6 w-6 text-white"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm2-6a1 1 0 00-1-1H8a1 1 0 100 2h3a1 1 0 001-1zm3-4a1 1 0 00-1-1H7a1 1 0 100 2h7a1 1 0 001-1z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
