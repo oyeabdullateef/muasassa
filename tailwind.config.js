@@ -2,6 +2,9 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    sm: "480px",
+    md: "768px",
+    lg: "1024px",
     extend: {
       colors: {
         whiteColor: "#ffffff",

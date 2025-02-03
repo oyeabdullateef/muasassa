@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muasassa</title>
     <link rel="stylesheet" href="output.css" />
-    <!-- <link rel="stylesheet" href="input.css" /> -->
+    <link rel="stylesheet" href="input.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -34,13 +34,11 @@
     />
   </head>
   <body>
-    <header
+    <div
       id="home"
-      class="fixed top-0 left-0 z-50 w-full h-[42px] bg-[#edf7f5] text-[#393939] shadow-[0px_1px_10px_0px_rgba(246,80,80,0.15)] text-d"
+      class="md:w-full hidden fixed top-0 left-0 z-50 lg:block md:block md:h-[42px] md:bg-[#edf7f5] text-[#393939] md:shadow-[0px_1px_10px_0px_rgba(246,80,80,0.15)] text-d"
     >
-      <nav
-        class="container relative bg-[#edf7f5] max-w-8xl md:bg-[#edf7f5] lg:bg-[#edf7f5]"
-      >
+      <div class="md:relative md:max-w-8xl md:bg-[#edf7f5] lg:bg-[#edf7f5]">
         <div class="flex flex-row justify-center gap-3">
           <ul class="flex flex-row justify-evenly gap-4 mt-2">
             <li>
@@ -88,9 +86,9 @@
             </li>
           </ul>
         </div>
-      </nav>
-    </header>
-    <div class="h-[830px] relative bg-greenColor overflow-hidden mt-[30px]">
+      </div>
+    </div>
+    <div class="h-[830px] md: relative bg-greenColor overflow-hidden mt-[50px]">
       <div
         class="w-[1660.69px] h-[636.24px] left-[-100.05px] top-[69.98px] absolute"
       ></div>
@@ -98,7 +96,6 @@
         class="w-[563px] h-[741px] left-[720px] top-[117px] absolute"
         src="img/sheu saad background.png"
       />
-
       <img
         class="w-[] h-[200px] left-[41px] absolute mt-[539px]"
         src="img/Vector (2).png "
@@ -109,7 +106,7 @@
         <div
           class="text-center text-white text-lg font-bold font-['helvetica'] leading-[30px]"
         >
-          Learn More
+          <a href="about us.html"> Learn More </a>
         </div>
       </div>
       <img
@@ -178,64 +175,68 @@
         </div>
         <div class="w-[1440px] h-[38px] bg-[#efffe5]"></div>
       </div>
-      <div
-        class="left-[135px] top-[20px] absolute justify-start items-center gap-[147px] inline-flex"
+      <header
+        class="fixed top-0 left-0 z-50 bg-greenColor w-full h-[80px] mt-[40px]"
       >
-        <img class="w-[60px] h-[53px]" src="img/logo img.png" />
-        <div class="justify-start items-center gap-10 flex">
-          <div class="justify-start items-center gap-9 flex">
-            <div
-              class="text-center text-white text-base font-bold font-['helvetica'] underline leading-7"
-            >
-              <a href="#home"> Home</a>
+        <nav
+          class="left-[135px] relative top-[20px] justify-start items-center gap-[147px] inline-flex"
+        >
+          <img class="w-[60px] h-[53px]" src="img/logo img.png" />
+          <div class="justify-start items-center gap-10 flex">
+            <div class="justify-start items-center gap-9 flex">
+              <div
+                class="text-center text-white text-base font-bold font-['helvetica'] underline leading-7"
+              >
+                <a href="#home"> Home</a>
+              </div>
+              <div
+                class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+              >
+                <a href="#about"> About Us</a>
+              </div>
+              <div
+                class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+              >
+                <a href="#service"> Services/Activities</a>
+              </div>
+              <div
+                class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+              >
+                <a href="#event"> Events</a>
+              </div>
+              <div
+                class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+              >
+                <a href="#gallery"> Gallery </a>
+              </div>
+              <div
+                class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+              >
+                <a href="#blog"> Blog </a>
+              </div>
+              <div
+                class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+              >
+                <a href="#project"> Projects </a>
+              </div>
+              <div
+                class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+              >
+                <a href="contact us.html"> Contact Us </a>
+              </div>
             </div>
             <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+              class="px-5 py-2 bg-[#249b00] rounded justify-center items-center gap-2.5 flex"
             >
-              <a href="#about"> About Us</a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
-            >
-              <a href="#service"> Services/Activities</a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
-            >
-              <a href="#event"> Events</a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
-            >
-              <a href="#gallery"> Gallery </a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
-            >
-              <a href="#blog"> Blog </a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
-            >
-              <a href="#project"> Projects </a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
-            >
-              <a href="#contact"> Contact Us </a>
+              <div
+                class="text-center text-white text-base font-bold font-['helvetica'] leading-7"
+              >
+                <a href="#donate"> Donate Now </a>
+              </div>
             </div>
           </div>
-          <div
-            class="px-5 py-2 bg-[#249b00] rounded justify-center items-center gap-2.5 flex"
-          >
-            <div
-              class="text-center text-white text-base font-bold font-['helvetica'] leading-7"
-            >
-              <a href="#donate"> Donate Now </a>
-            </div>
-          </div>
-        </div>
-      </div>
+        </nav>
+      </header>
 
       <img
         class="w-[730px] h-[610px] left-[3px] absolute bottom-[150px]"
@@ -266,7 +267,7 @@
             <div
               class="text-center text-white text-lg font-bold font-['helvetica'] leading-[30px]"
             >
-              <a href="#" class="flex flex-row gap-3">
+              <a href="about us.html" class="flex flex-row gap-3">
                 <span> Learn More </span>
                 <img src="img/Union (1).png" alt="" class="w-8" />
               </a>
@@ -329,7 +330,7 @@
               <div
                 class="text-center text-white text-lg font-bold font-['helvetica'] leading-[30px]"
               >
-                <a href="#" class="flex flex-row gap-3">
+                <a href="about us.html" class="flex flex-row gap-3">
                   <span> Learn More </span>
                   <img src="img/Union (1).png" alt="" class="w-8" />
                 </a>
@@ -703,7 +704,7 @@
               <!-- View All Button -->
               <div>
                 <a
-                  href="#"
+                  href="nec member.html"
                   class="inline-block px-6 py-3 bg-[#249b00] text-white font-bold"
                 >
                   View All NEC Members
@@ -805,13 +806,13 @@
             </div>
           </div>
           <div
-            class="self-stretch h-[1035px] px-[135px] pt-20 pb-[66px] bg-[#edf7f5] justify-center items-center inline-flex overflow-hidden"
+            class="w-full h-[1035px] px-[135px] pt-20 pb-[66px] bg-[#edf7f5] justify-center items-center inline-flex overflow-hidden"
           >
             <div
               class="grow shrink basis-0 self-stretch flex-col justify-start items-start gap-[30px] inline-flex"
             >
               <div
-                class="self-stretch h-[202px] flex-col justify-start items-start gap-[30px] flex"
+                class="self-stretch h-[202px] flex-col ml-[80px] justify-start items-start gap-[30px] flex"
               >
                 <div
                   class="w-[534px] text-[#181d1f] text-5xl font-semibold font-['PlayfairDisplay'] capitalize leading-[56px]"
@@ -842,7 +843,7 @@
                 </div>
               </div>
               <div
-                class="w-[1400px] h-[643px] flex justify-start items-start gap-[55px] overflow-x-scroll service"
+                class="w-[1400px] h-[643px] ml-[80px] flex justify-start items-start gap-[55px] overflow-x-scroll service"
               >
                 <div class="justify-end items-start gap-[32.74px] inline-flex">
                   <div
@@ -1012,7 +1013,7 @@
                     <div
                       class="text-center text-[#249b00] text-lg font-bold font-['helvetica'] leading-[30px]"
                     >
-                      <a href="#" class="flex flex-row gap-3">
+                      <a href="event.html" class="flex flex-row gap-3">
                         <span> Watch Now</span>
                         <img src="img/Union.png" alt="" class="w-8" />
                       </a>
@@ -1351,8 +1352,8 @@
               <div
                 class="text-center text-white text-lg font-bold font-['helvetica'] leading-[30px]"
               >
-                <a href="#" class="flex flex-row gap-3">
-                  <span> Learn More </span>
+                <a href="our gallery.html" class="flex flex-row gap-3">
+                  <span> View More </span>
                   <img src="img/Union (1).png" alt="" class="w-8" />
                 </a>
               </div>
@@ -1701,7 +1702,7 @@
               <div
                 class="text-center text-white text-lg font-bold font-['helvetica'] leading-[30px]"
               >
-                View All Branches
+                <a href="our branch.html"> View All Branches </a>
               </div>
             </div>
           </div>
@@ -3826,7 +3827,7 @@
                 <div
                   class="text-center text-white text-lg font-bold font-['helvetica'] leading-[30px]"
                 >
-                  <a href="#"> View All Insights </a>
+                  <a href="blog.html"> View All Insights </a>
                 </div>
               </div>
             </div>
@@ -3834,6 +3835,7 @@
         </div>
       </div>
     </main>
+
     <footer>
       <div id="contact" class="h-[458px] relative bg-[#040f00]">
         <div class="w-[1440px] h-[458px] left-0 top-0 absolute"></div>
