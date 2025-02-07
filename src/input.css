@@ -7,6 +7,8 @@
 @layer base {
   body {
     @apply text-whiteColor tracking-wider font-dmsans;
+
+    font-family: "Playfair Display";
   }
   section {
     @apply pt-40 pb-4 md:pt-40;
