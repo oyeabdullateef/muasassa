@@ -4528,8 +4528,16 @@ video {
     width: 100%;
   }
 
+  .lg\:w-\[534px\]{
+    width: 534px;
+  }
+
   .lg\:max-w-lg{
     max-width: 32rem;
+  }
+
+  .lg\:max-w-\[500px\]{
+    max-width: 500px;
   }
 
   .lg\:flex-none{
