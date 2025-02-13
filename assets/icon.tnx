@@ -4316,3 +4316,70 @@ style="
         </div>
       </div> -->
     </main>
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zakat Payment Section</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-green-900 text-white">
+
+  <section class="flex flex-col lg:flex-row items-center justify-between px-6 py-12 lg:px-20 space-y-8 lg:space-y-0">
+    <!-- Text Section -->
+    <div class="lg:w-1/2 text-center lg:text-left">
+      <h1 class="text-3xl lg:text-5xl font-bold mb-4">Pay Your Zakat!</h1>
+      <p class="text-lg mb-6">
+        Zakat is a cornerstone of Islamic charity, requiring eligible Muslims to donate 
+        a portion of their wealth to those in need. Use our calculator to determine your Zakat accurately.
+      </p>
+      <div class="flex justify-center lg:justify-start space-x-4">
+        <button class="bg-white text-green-800 font-semibold px-5 py-2 rounded hover:bg-gray-100">
+          Calculate Zakat
+        </button>
+        <button class="bg-green-600 text-white font-semibold px-5 py-2 rounded hover:bg-green-700">
+          Pay Now
+        </button>
+      </div>
+    </div>
+
+    <!-- Image Section -->
+    <div class="relative lg:w-1/2 flex items-center justify-center">
+      <img src="https://via.placeholder.com/300" alt="Child holding coins" class="rounded-lg w-72 h-72 object-cover">
+      <!-- Zakat Graph Overlay -->
+      <div class="absolute top-4 left-4 bg-green-800 bg-opacity-80 p-4 rounded-lg">
+        <p class="text-sm font-semibold mb-2">Zakat Due</p>
+        <div class="flex space-x-2 items-end">
+          <div class="w-6 h-16 bg-gray-300 rounded relative">
+            <div class="bg-yellow-400 h-4 absolute bottom-0 w-full"></div>
+            <p class="text-xs absolute bottom-[-20px] text-center w-full">2%</p>
+          </div>
+          <div class="w-6 h-16 bg-gray-300 rounded relative">
+            <div class="bg-yellow-400 h-8 absolute bottom-0 w-full"></div>
+            <p class="text-xs absolute bottom-[-20px] text-center w-full">4%</p>
+          </div>
+          <div class="w-6 h-16 bg-gray-300 rounded relative">
+            <div class="bg-yellow-400 h-12 absolute bottom-0 w-full"></div>
+            <p class="text-xs absolute bottom-[-20px] text-center w-full">6%</p>
+          </div>
+          <div class="w-6 h-16 bg-gray-300 rounded relative">
+            <div class="bg-yellow-400 h-16 absolute bottom-0 w-full"></div>
+            <p class="text-xs absolute bottom-[-20px] text-center w-full">8%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

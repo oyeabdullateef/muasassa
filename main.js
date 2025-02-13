@@ -43,14 +43,13 @@ blogYear5.addEventListener("click", () => {
 });
 
 const scrollContainer = document.querySelector(".service");
-const backBtn = document.getElementById("back");
-const nextBtn = document.getElementById("next");
-
-nextBtn.addEventListener("click", () => {
+const forwardBtn = document.getElementById("forward");
+const backwardBtn = document.getElementById("backward");
+forwardBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehaviour = "smooth";
   scrollContainer.scrollLeft += 1400;
 });
-backBtn.addEventListener("click", () => {
+backwardBtn.addEventListener("click", () => {
   scrollContainer.style.scrollBehaviour = "smooth";
   scrollContainer.scrollLeft -= 1400;
 });
@@ -75,6 +74,18 @@ const body = document.getElementById("body");
 openModal.addEventListener("click", () => {
   modalWrapper.classList.remove("hidden");
   // body.classList.add("grid", "place-items-center", "h-screen");
+});
+
+const menuToggle = document.getElementById("menu-toggle");
+const menuClose = document.getElementById("menu-close");
+const mobileMenu = document.getElementById("mobile-menu");
+
+menuToggle.addEventListener("click", () => {
+  mobileMenu.classList.remove("hidden");
+});
+
+menuClose.addEventListener("click", () => {
+  mobileMenu.classList.add("hidden");
 });
 
 // const hamburger = document.getElementById("hamburger");
