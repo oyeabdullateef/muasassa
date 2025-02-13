@@ -4512,6 +4512,22 @@ video {
     width: 623.20px;
   }
 
+  .lg\:w-\[510px\]{
+    width: 510px;
+  }
+
+  .lg\:w-0{
+    width: 0px;
+  }
+
+  .lg\:w-\[px\]{
+    width: px;
+  }
+
+  .lg\:w-full{
+    width: 100%;
+  }
+
   .lg\:max-w-lg{
     max-width: 32rem;
   }
@@ -4648,6 +4664,22 @@ video {
     gap: 98px;
   }
 
+  .lg\:gap-\[300px\]{
+    gap: 300px;
+  }
+
+  .lg\:gap-\[500px\]{
+    gap: 500px;
+  }
+
+  .lg\:gap-\[550px\]{
+    gap: 550px;
+  }
+
+  .lg\:gap-\[520px\]{
+    gap: 520px;
+  }
+
   .lg\:self-stretch{
     align-self: stretch;
   }
@@ -4713,5 +4745,10 @@ video {
   .lg\:text-5xl{
     font-size: 3rem;
     line-height: 1;
+  }
+
+  .lg\:text-lg{
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
