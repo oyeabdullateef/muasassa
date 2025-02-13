@@ -556,6 +556,28 @@ video {
   display: none;
 }
 
+<<<<<<< HEAD:output.css
+=======
+body{
+  font-family: DM Sans, sans-serif;
+  letter-spacing: 0.05em;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity, 1));
+  font-family: "Playfair Display";
+}
+
+section{
+  padding-top: 10rem;
+  padding-bottom: 1rem;
+}
+
+@media (min-width: 768px){
+  section{
+    padding-top: 10rem;
+  }
+}
+
+>>>>>>> 96b1ab287434c56005d669dd91b9893363bb8617:dist/output.css
 .fixed{
   position: fixed;
 }
@@ -1593,6 +1615,10 @@ video {
   height: 36.11px;
 }
 
+.h-\[36px\]{
+  height: 36px;
+}
+
 .h-\[370px\]{
   height: 370px;
 }
@@ -1675,6 +1701,10 @@ video {
 
 .h-\[562px\]{
   height: 562px;
+}
+
+.h-\[56px\]{
+  height: 56px;
 }
 
 .h-\[570px\]{
@@ -2109,6 +2139,10 @@ video {
   width: 36.11px;
 }
 
+.w-\[36px\]{
+  width: 36px;
+}
+
 .w-\[370px\]{
   width: 370px;
 }
@@ -2195,6 +2229,10 @@ video {
 
 .w-\[569px\]{
   width: 569px;
+}
+
+.w-\[56px\]{
+  width: 56px;
 }
 
 .w-\[570\.05px\]{

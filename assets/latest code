@@ -11,7 +11,15 @@
             </li>
             <li>
               <i class="fa-regular fa-clock text-lg text-primaryColorLight"></i>
-              <span> Wednesday, 10 January 2021</span>
+              <span class="date-view"> Wednesday, 10 January 2021</span>
+            <script>
+              document.addEventListener("DOMContentLoaded", function() {
+                const dateElement = document.querySelector(".date-view");
+                const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                const today = new Date().toLocaleDateString('en-US', options);
+                dateElement.textContent = today;
+              });
+            </script>
             </li>
             <li>
               <span class="bg-greenColorLight p-2 pb-4">Breaking News</span>
@@ -254,7 +262,7 @@
       </div>
     </div>
     <main>
-      <div id="about">
+      <div id="about" class="border border-red-500">
         <div class="w-full h-[30px] bg-[#efffe5]"></div>
         <div class="h-[709px] relative bg-[#edf7f5] overflow-hidden">
           <div
@@ -427,30 +435,23 @@
                     class="flex-col justify-start items-start gap-[22px] inline-flex"
                   >
                     <div
-                      class="w-[70px] h-[70px] p-[7.45px] bg-[#edf7f5] rounded-[472.97px] border border-[#249b00] justify-start items-center gap-[7.45px] inline-flex"
+                      class="flex justify-center items-center w-[70px] h-[70px] border border-[#249b00] rounded-full"
                     >
-                      <div>
                         <div
-                          class="w-[50px] h-[50px] bg-[#249b00] rounded-full"
+                          class="flex justify-center items-center w-[56px] h-[56px] bg-[#249b00] rounded-full"
                         >
-                          <div class="w-[30px] h-[30px] absolute">
                             <img
                               src="img/fluent_people-community-24-filled.png"
                               alt=""
-                              class="mt-2 ml-2"
+                              class="w-[36px] h-[36px]"
                             />
-                          </div>
                         </div>
-                      </div>
-                      <div
-                        class="w-[29.79px] h-[29.79px] relative overflow-hidden"
-                      ></div>
                     </div>
                     <div
                       class="flex-col justify-start items-start gap-2.5 flex"
                     >
                       <div
-                        class="text-[#242527] text-2xl font-semibold font-['PlayfairDisplay']"
+                        class="text-[#242527] text-2xl font-semibold font-['Playfair Display']"
                       >
                         Unity
                       </div>
@@ -698,9 +699,46 @@
                     Giwa Usman Adebayo
                   </h3>
                   <p class="text-sm">BOT Chairman</p>
-                  <a href="#" class="mt-2 text-sm underline"
-                    >View Full Profile</a
-                  >
+
+                  <!-- Improve modal to your taste -->
+                <a class="mt-2 text-sm underline" onclick="showModal()">View Full Profile</a>
+
+                <div id="modal" class="hidden fixed inset-0 bg-gray-600 bg-opacity-50 flex justify-center items-center z-50">
+                  <div class="bg-white !text-black p-6 rounded-lg">
+                  <h2 class="text-2xl font-bold mb-4">Giwa Usman Adebayo</h2>
+                  <p class="mb-4">BOT Chairman</p>
+                  <button onclick="closeModal()" class="px-4 py-2 bg-red-500 !text-white rounded">Close</button>
+                  </div>
+                </div>
+
+                <style>
+                  body.modal-open {
+                  overflow: hidden;
+                  }
+                </style>
+
+                <script>
+                  function showModal() {
+                  document.getElementById('modal').classList.remove('hidden');
+                  document.body.classList.add('modal-open');
+                  }
+
+                  function closeModal() {
+                  document.getElementById('modal').classList.add('hidden');
+                  document.body.classList.remove('modal-open');
+                  }
+                </script>
+
+                <script>
+                  function showModal() {
+                    document.getElementById('modal').classList.remove('hidden');
+                  }
+
+                  function closeModal() {
+                    document.getElementById('modal').classList.add('hidden');
+                  }
+                </script>
+                <!-- Modal End -->
                 </div>
                 <div
                   class="absolute top-[150px] left-0 transform -translate-y-1/2 bg-[#249b00] p-2 rounded-full cursor-pointer hover:bg-green-700"
