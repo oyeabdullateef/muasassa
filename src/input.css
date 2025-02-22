@@ -7,3 +7,10 @@
 .service::-webkit-scrollbar {
   display: none;
 }
+
+.hero {
+  height: 100vh;
+  background-image: url(img/Hero_Section[1].png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}

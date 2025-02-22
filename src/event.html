@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muasassa/event</title>
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="stylesheet" href="/src/input.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Oswald:wght@200..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="shortcut icon"
+      href="img/favicon icon .png"
+      type="image/x-icon"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header
+      class="w-full h-[85px] fixed top-0 left-0 z-50 py-4 bg-[#249b00] flex flex-col justify-center items-center"
+    >
+      <nav
+        class="w-full flex flex-wrap md:justify-evenly justify-between items-center px-4 md:px-8"
+      >
+        <img
+          class="w-[50px] h-[35px] md:w-[60px] md:h-[43px]"
+          src="img/logo img.png"
+        />
+
+        <div class="hidden md:flex justify-start items-center gap-6 md:gap-10">
+          <div
+            class="flex flex-col md:flex-row justify-start items-center gap-4 md:gap-6"
+          >
+            <a
+              href="index.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Home</a
+            >
+            <a
+              href="about us.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >About Us</a
+            >
+            <a
+              href="our branch.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Services/Activities</a
+            >
+            <a
+              href="event.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Events</a
+            >
+            <a
+              href="our gallery.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Gallery</a
+            >
+            <a
+              href="blog.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Blog</a
+            >
+            <a
+              href="event.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Projects</a
+            >
+            <a
+              href="contact us.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Contact Us</a
+            >
+          </div>
+          <div
+            class="px-4 py-2 bg-white rounded flex justify-center items-center"
+          >
+            <a
+              href="#"
+              class="text-[#249b00] text-sm md:text-base font-bold font-['helvetica'] leading-6 md:leading-7"
+              >Donate Now</a
+            >
+          </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-button" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden w-full flex flex-col bg-[#249b00] mt-4 space-y-4 md:hidden"
+        >
+          <a
+            href="index.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Home</a
+          >
+          <a
+            href="about us.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >About Us</a
+          >
+          <a
+            href="our branch.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Services/Activities</a
+          >
+          <a
+            href="event.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Events</a
+          >
+          <a
+            href="our gallery.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Gallery</a
+          >
+          <a
+            href="blog.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Blog</a
+          >
+          <a
+            href="event.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Projects</a
+          >
+          <a
+            href="contact us.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Contact Us</a
+          >
+          <div class="px-4 py-2 bg-white rounded text-center">
+            <a
+              href="#"
+              class="text-[#249b00] text-base font-bold font-['helvetica']"
+              >Donate Now</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="h-auto py-20 bg-white flex flex-col items-center gap-4">
+        <div
+          class="flex flex-col items-center gap-2 w-full max-w-screen-lg px-4 text-center mt-[30px]"
+        >
+          <h1
+            class="text-[#181d1f] text-4xl md:text-6xl font-bold font-['PlayfairDisplay']"
+          >
+            Events
+          </h1>
+          <p
+            class="text-[#5d6a6e] text-base md:text-lg font-normal font-['helvetica'] leading-[30px]"
+          >
+            Uplifting Communities through Knowledge, Compassion, and Empowerment
+          </p>
+        </div>
+      </div>
+
+      <div
+        class="px-6 py-10 bg-[#0b2e00] flex flex-col items-center gap-6 lg:px-[135px] lg:py-[50px]"
+      >
+        <div class="w-full max-w-7xl flex flex-col gap-6">
+          <!-- Header Section -->
+          <div
+            class="w-full flex flex-col gap-4 text-center lg:text-left lg:ml-[95px]"
+          >
+            <div>
+              <span
+                class="text-white text-3xl sm:text-4xl lg:text-5xl font-semibold font-['PlayfairDisplay'] leading-tight"
+              >
+                Annual Ramadan Lecture:
+              </span>
+              <span
+                class="text-[#878787] text-3xl sm:text-4xl lg:text-5xl font-semibold font-['PlayfairDisplay'] leading-tight"
+              >
+                Focusing on Inner <br />
+                Dimensions of Ramadan Fast.
+              </span>
+            </div>
+            <p
+              class="text-[#cfcfcf] text-base sm:text-lg font-normal font-['helvetica'] leading-[30px]"
+            >
+              Uplifting Communities through Knowledge, Compassion, and
+              Empowerment
+            </p>
+            <!-- Date and Location -->
+            <div
+              class="flex flex-wrap justify-center lg:justify-start gap-3 text-[#cfcfcf] text-sm sm:text-lg font-normal font-['helvetica'] leading-[30px]"
+            >
+              <span>December</span> <span>|</span> <span>2025</span>
+              <span>|</span> <span>Lagos</span>
+            </div>
+          </div>
+          <!-- Image Section -->
+          <div class="w-full flex justify-center">
+            <img
+              class="w-full max-w-5xl"
+              src="img/event 4.png"
+              alt="Annual Ramadan Lecture"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="py-14 bg-white flex flex-col items-center gap-14">
+        <div
+          class="flex flex-col items-center gap-6 w-full px-4 md:px-8 lg:px-16"
+        >
+          <!-- Title Section -->
+          <div class="w-full max-w-[1280px] flex flex-col items-start gap-3">
+            <h2
+              class="text-[#181d1f] text-4xl md:text-5xl font-semibold font-['PlayfairDisplay']"
+            >
+              Other Events
+            </h2>
+            <p
+              class="text-[#5d6a6e] text-base md:text-lg font-normal font-['helvetica'] leading-relaxed"
+            >
+              Lorem ipsum dolor sit amet, consetetur sadipscing sed diam nonumy.
+            </p>
+          </div>
+
+          <!-- Event Cards Grid -->
+          <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full max-w-[1280px]"
+          >
+            <!-- Event Card 1 -->
+            <div class="flex flex-col gap-6">
+              <div class="w-full h-[250px] md:h-[400px] overflow-hidden">
+                <img
+                  class="w-full h-full object-cover"
+                  src="img/o event.png"
+                  alt="Event Image"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center gap-6">
+                  <div class="flex items-center gap-1">
+                    <img class="w-5 h-5" src="img/user1.png" alt="User Icon" />
+                    <span class="text-[#5d6a6e] text-base font-normal"
+                      >Bruce Lee</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="w-5 h-5"
+                      src="img/clock1.png"
+                      alt="Clock Icon"
+                    />
+                    <span class="text-[#5d6a6e] text-base font-normal"
+                      >Today 11:43pm</span
+                    >
+                  </div>
+                </div>
+                <h3
+                  class="text-[#181d1f] text-lg md:text-[22px] font-bold capitalize leading-loose"
+                >
+                  The Transformative Power of Education in Underprivileged
+                  Communities
+                </h3>
+                <p
+                  class="text-[#5d6a6e] text-base md:text-lg font-normal leading-[30px]"
+                >
+                  Education is the cornerstone of societal development, yet many
+                  underprivileged children lack access to quality...
+                </p>
+                <div
+                  class="border-b border-[#181d1f] w-[120px] flex items-center gap-1 mt-4"
+                >
+                  <span class="text-[#181d1f] text-base font-bold"
+                    >View Details</span
+                  >
+                  <img
+                    class="w-5 h-5"
+                    src="img/arrow-right1.png"
+                    alt="Arrow Icon"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Event Card 2 -->
+            <div class="flex flex-col gap-6">
+              <div class="w-full h-[250px] md:h-[400px] overflow-hidden">
+                <img
+                  class="w-full h-full object-cover"
+                  src="img/o event 1.png"
+                  alt="Event Image"
+                />
+              </div>
+              <div class="flex flex-col gap-2">
+                <div class="flex items-center gap-6">
+                  <div class="flex items-center gap-1">
+                    <img class="w-5 h-5" src="img/user1.png" alt="User Icon" />
+                    <span class="text-[#5d6a6e] text-base font-normal"
+                      >Bruce Lee</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-1">
+                    <img
+                      class="w-5 h-5"
+                      src="img/clock1.png"
+                      alt="Clock Icon"
+                    />
+                    <span class="text-[#5d6a6e] text-base font-normal"
+                      >Today 11:43pm</span
+                    >
+                  </div>
+                </div>
+                <h3
+                  class="text-[#181d1f] text-lg md:text-[22px] font-bold capitalize leading-loose"
+                >
+                  The Transformative Power of Education in Underprivileged
+                  Communities
+                </h3>
+                <p
+                  class="text-[#5d6a6e] text-base md:text-lg font-normal leading-[30px]"
+                >
+                  Education is the cornerstone of societal development, yet many
+                  underprivileged children lack access to quality...
+                </p>
+                <div
+                  class="border-b border-[#181d1f] w-[120px] flex items-center gap-1 mt-4"
+                >
+                  <span class="text-[#181d1f] text-base font-bold"
+                    >View Details</span
+                  >
+                  <img
+                    class="w-5 h-5"
+                    src="img/arrow-right1.png"
+                    alt="Arrow Icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="px-4 py-10 bg-[#edf7f5] flex justify-center items-center">
+        <div class="w-full max-w-[1200px] flex flex-col items-center gap-10">
+          <!-- Title Section -->
+          <div class="flex flex-col items-center gap-5">
+            <div class="flex flex-col items-center gap-4">
+              <div class="flex items-center gap-2">
+                <div class="w-5 border-2 border-[#249b00]"></div>
+                <div
+                  class="text-[#249b00] text-lg sm:text-xl font-normal font-['helvetica']"
+                >
+                  Our Gallery
+                </div>
+              </div>
+              <div
+                class="w-full max-w-[936px] text-center text-[#181d1f] text-2xl sm:text-4xl lg:text-5xl font-extrabold font-['PlayfairDisplay'] leading-tight"
+              >
+                A View of Our Events, Projects, Branches, Activities.
+              </div>
+            </div>
+          </div>
+
+          <!-- Image Gallery -->
+          <div class="flex flex-wrap justify-center gap-4 md:gap-6">
+            <!-- Left Tall Image -->
+            <div class="w-full sm:w-[48%] md:w-[270px]">
+              <img
+                class="w-full h-auto md:h-[652px] object-cover rounded-lg"
+                src="img/activities 1.png"
+              />
+            </div>
+
+            <!-- Middle Column 1 -->
+            <div class="w-full sm:w-[48%] md:w-[270px] flex flex-col gap-4">
+              <img
+                class="w-full h-auto md:h-[382px] object-cover rounded-lg"
+                src="img/activities 2.png"
+              />
+              <img
+                class="w-full h-auto md:h-[240px] object-cover rounded-lg"
+                src="img/activities 3.png"
+              />
+            </div>
+
+            <!-- Middle Column 2 -->
+            <div class="w-full sm:w-[48%] md:w-[270px] flex flex-col gap-4">
+              <img
+                class="w-full h-auto md:h-[240px] object-cover rounded-lg"
+                src="img/activities 4.png"
+              />
+              <img
+                class="w-full h-auto md:h-[382px] object-cover rounded-lg"
+                src="img/activities 5.png"
+              />
+            </div>
+
+            <!-- Right Tall Image -->
+            <div class="w-full sm:w-[48%] md:w-[270px]">
+              <img
+                class="w-full h-auto md:h-[652px] object-cover rounded-lg"
+                src="img/activities 6.png"
+              />
+            </div>
+          </div>
+
+          <!-- View More Button -->
+          <div class="px-6 py-3 bg-[#249b00]">
+            <a
+              href="our gallery.html"
+              class="flex items-center gap-3 text-white text-lg font-bold font-['helvetica']"
+            >
+              <span>View More</span>
+              <img src="img/Union (1).png" alt="" class="w-6" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="bg-[#040f00] text-[#96a5aa] py-12">
+      <div class="max-w-[1200px] mx-auto px-4">
+        <!-- Footer Sections -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 mb-8"
+        >
+          <!-- MNIDF Section -->
+          <div>
+            <h3
+              class="text-white text-xl font-bold font-['PlayfairDisplay'] mb-4"
+            >
+              MNIDF
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Services/ <br />Activities</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Support Us</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Process Section -->
+          <div>
+            <h3
+              class="text-white text-xl font-bold font-['PlayfairDisplay'] mb-4"
+            >
+              Process
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Events</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Quick Links Section -->
+          <div>
+            <h3
+              class="text-white text-xl font-bold font-['PlayfairDisplay'] mb-4"
+            >
+              Quick Links
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Leadership Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >FAQs</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Updates Section -->
+          <div>
+            <h3
+              class="text-white text-xl font-bold font-['PlayfairDisplay'] mb-4"
+            >
+              Updates
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Blogs & Insights</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Zakat Calculator</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Membership</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Newsletter Section -->
+          <div>
+            <h3
+              class="text-white text-xl font-bold font-['PlayfairDisplay'] mb-4"
+            >
+              Newsletter
+            </h3>
+            <div class="flex flex-col sm:flex-row items-center gap-3">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="w-full sm:w-[258px] h-[60px] px-4 text-base text-[#96a5aa] border border-[#364145] bg-transparent focus:outline-none"
+              />
+              <button
+                class="px-7 py-3 bg-[#249b00] text-white font-bold text-lg hover:bg-[#1e7e00] font-['helvetica'] transition"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-[#364145] my-6"></div>
+        <div
+          class="flex md:flex-row-reverse flex-col md:justify-between mt-[15px]"
+        >
+          <!-- Social Icons -->
+          <div class="flex justify-center space-x-4 mb-4">
+            <a
+              href="#"
+              class="w-9 h-9 bg-[#4c5c61] hover:bg-[#249b00] transition flex items-center justify-center"
+            >
+              <i class="fab fa-facebook-f text-white"></i>
+            </a>
+            <a
+              href="#"
+              class="w-9 h-9 bg-[#4c5c61] hover:bg-[#249b00] transition flex items-center justify-center"
+            >
+              <i class="fab fa-linkedin-in text-white"></i>
+            </a>
+            <a
+              href="#"
+              class="w-9 h-9 bg-[#4c5c61] hover:bg-[#249b00] transition flex items-center justify-center"
+            >
+              <i class="fab fa-twitter text-white"></i>
+            </a>
+            <a
+              href="#"
+              class="w-9 h-9 bg-[#4c5c61] hover:bg-[#249b00] transition flex items-center justify-center"
+            >
+              <i class="fab fa-instagram text-white"></i>
+            </a>
+          </div>
+
+          <!-- Copyright Section -->
+          <div
+            class="flex flex-col md:justify-start md:items-start justify-center items-center"
+          >
+            <img src="img/footer.png" alt="" class="w-[200px]" />
+            <p class="text-center text-xs text-[#878787] font-['helvetica']">
+              © 2024 Muassasat Nasrul Ilm Wa Da’awat Foundation. All Rights
+              Reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="event.js"></script>
+  </body>
+</html>
