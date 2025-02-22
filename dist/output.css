@@ -3149,6 +3149,7 @@ video {
 @media (max-width: 1024px) {
   .hero {
     height: 85vh;
+    max-width: 1024px;
   }
 }
 
@@ -3157,24 +3158,28 @@ video {
 @media (max-width: 768px) {
   .hero {
     height: 80vh;
+    max-width: 768px;
   }
 }
 
 @media (max-width: 600px) {
   .hero {
     height: 75vh;
+    max-width: 600px;
   }
 }
 
 @media (max-width: 480px) {
   .hero {
     height: 70vh;
+    max-width: 480px;
   }
 }
 
 @media (max-width: 320px) {
   .hero {
     height: 65vh;
+    max-width: 320px;
   }
 }
 
