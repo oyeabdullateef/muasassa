@@ -864,6 +864,10 @@ video {
   top: 50%;
 }
 
+.top-\[50px\]{
+  top: 50px;
+}
+
 .top-\[56px\]{
   top: 56px;
 }
@@ -1053,6 +1057,10 @@ video {
 
 .mt-\[80px\]{
   margin-top: 80px;
+}
+
+.block{
+  display: block;
 }
 
 .flex{
@@ -1385,6 +1393,10 @@ video {
 
 .h-\[500px\]{
   height: 500px;
+}
+
+.h-\[50px\]{
+  height: 50px;
 }
 
 .h-\[528px\]{
@@ -2208,6 +2220,12 @@ video {
   margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
 }
 
+.space-y-3 > :not([hidden]) ~ :not([hidden]){
+  --tw-space-y-reverse: 0;
+  margin-top: calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));
+  margin-bottom: calc(0.75rem * var(--tw-space-y-reverse));
+}
+
 .space-y-4 > :not([hidden]) ~ :not([hidden]){
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
@@ -2632,11 +2650,6 @@ video {
 .py-0\.5{
   padding-top: 0.125rem;
   padding-bottom: 0.125rem;
-}
-
-.py-1{
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
 }
 
 .py-10{
@@ -3114,10 +3127,55 @@ video {
 }
 
 .hero {
-  height: 100vh;
-  background-image: url(img/Hero_Section[1].png);
-  background-size: cover;
+  background-image: url("img/Hero_Section[1].png");
+  background-size: contain;
+  background-position: center;
   background-repeat: no-repeat;
+  width: 100vh;
+  height: 100vh;
+  /* Full screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 1200px) {
+  .hero {
+    height: 90vh;
+    max-width: 1200px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .hero {
+    height: 85vh;
+  }
+}
+
+/* Adjust hero height for different devices */
+
+@media (max-width: 768px) {
+  .hero {
+    height: 80vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero {
+    height: 75vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero {
+    height: 70vh;
+  }
+}
+
+@media (max-width: 320px) {
+  .hero {
+    height: 65vh;
+  }
 }
 
 .hover\:bg-\[\#1a7b00\]:hover{

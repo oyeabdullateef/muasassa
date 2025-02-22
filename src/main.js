@@ -88,6 +88,12 @@ menuClose.addEventListener("click", () => {
   mobileMenu.classList.add("hidden");
 });
 
+document
+  .getElementById("mobile-menu-btn")
+  .addEventListener("click", function () {
+    document.getElementById("mobile-menu").classList.toggle("hidden");
+  });
+
 // const hamburger = document.getElementById("hamburger");
 // const navMenu = document.getElementById("nav-menu");
 // const closeMenu = document.getElementById("close-menu");
