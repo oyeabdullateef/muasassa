@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Muasassa</title>
-    <link rel="stylesheet" href="/dist/output.css" />
-    <link rel="stylesheet" href="/src/input.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="input.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,6 +13,8 @@
       rel="stylesheet"
     />
 
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
     <link
       rel="shortcut icon"
       href="img/favicon icon .png"
@@ -35,7 +37,7 @@
   <body id="body">
     <div
       id="home"
-      class="w-full fixed hidden top-0 left-0 z-50 lg:block md:block h-[42px] bg-[#edf7f5] text-[#393939] shadow-[0px_1px_10px_0px_rgba(246,80,80,0.15)] text-d"
+      class="w-full fixed hidden top-0 left-0 z-50 lg:block md:block h-[42px] bg-[#edf7f5] text-[#393939] shadow-[0px_1px_10px_0px_rgba(246,80,80,0.15)] text-d overflow-hidden"
     >
       <div class="md:relative md:max-w-8xl md:bg-[#edf7f5] lg:bg-[#edf7f5]">
         <div
@@ -93,63 +95,275 @@
         </div>
       </div>
     </div>
-    <div class="hero relative">
+    <div
+      class="h-[500px] md:h-[830px] relative bg-greenColor md:overflow-hidden md:mt-[48px] mt-[30px]"
+    >
+      <div>
+        <img
+          src="img/Hero_Section_(1)[2].png"
+          alt=""
+          class="absolute w-full h-[500px] md:h-[830px]"
+        />
+      </div>
       <header
-        class="fixed top-0 left-0 z-50 bg-greenColor w-full h-[50px] sm:h-[70px] md:h-[60px]"
+        class="fixed top-0 left-0 z-50 bg-greenColor w-full h-[50px] sm:h-[70px] md:h-[65px] md:mt-[40px]"
       >
         <nav
-          class="flex items-center justify-between px-4 sm:px-6 md:px-[135px] py-2"
+          class="w-full flex flex-wrap md:justify-evenly justify-between items-center px-4 md:px-8 mt-[10px]"
         >
-          <!-- Logo -->
           <img
-            class="w-[35px] sm:w-[45px] md:w-[60px] h-auto"
+            class="w-[50px] h-[35px] md:w-[60px] md:h-[43px]"
             src="img/logo img.png"
           />
 
+          <div
+            class="hidden md:flex justify-start items-center gap-6 md:gap-10"
+          >
+            <div
+              class="flex flex-col md:flex-row justify-start items-center gap-4 md:gap-6"
+            >
+              <a
+                href="index.html"
+                class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+                >Home</a
+              >
+              <a
+                href="about us.html"
+                class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+                >About Us</a
+              >
+              <a
+                href="our branch.html"
+                class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+                >Services/Activities</a
+              >
+              <a
+                href="event.html"
+                class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+                >Events</a
+              >
+              <a
+                href="our gallery.html"
+                class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+                >Gallery</a
+              >
+              <a
+                href="blog.html"
+                class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+                >Blog</a
+              >
+              <a
+                href="event.html"
+                class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+                >Projects</a
+              >
+              <a
+                href="contact us.html"
+                class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+                >Contact Us</a
+              >
+            </div>
+            <div
+              class="px-4 py-2 bg-[#249b00] rounded flex justify-center items-center"
+            >
+              <a
+                href="#"
+                class="text-white text-sm md:text-base font-bold font-['helvetica'] leading-6 md:leading-7"
+                >Donate Now</a
+              >
+            </div>
+          </div>
+
           <!-- Mobile Menu Button -->
-          <button class="md:hidden text-white text-2xl" id="mobile-menu-btn">
-            &#9776;
-          </button>
+          <div class="md:hidden">
+            <button id="menu-button" class="text-white focus:outline-none">
+              <svg
+                class="w-6 h-6"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </button>
+          </div>
 
-          <!-- Desktop Menu -->
-          <ul
-            class="hidden md:flex space-x-3 font-['Helvetica'] sm:space-x-5 text-white font-bold"
+          <!-- Mobile Menu -->
+          <div
+            id="mobile-menu"
+            class="hidden w-full flex flex-col bg-[#249b00] mt-4 space-y-4 md:hidden"
           >
-            <li><a href="#home" class="underline">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="#service">Services</a></li>
-            <li><a href="#event">Events</a></li>
-            <li><a href="#gallery">Gallery</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#project">Projects</a></li>
-            <li><a href="contact us.html">Contact Us</a></li>
-          </ul>
-
-          <!-- Donate Button -->
-          <a
-            href="#donate"
-            class="hidden md:flex px-3 sm:px-4 py-2 bg-[#249b00] text-white font-bold"
-          >
-            Donate Now
-          </a>
+            <a
+              href="index.html"
+              class="text-white text-base font-['helvetica'] px-4 py-2"
+              >Home</a
+            >
+            <a
+              href="about us.html"
+              class="text-white text-base font-['helvetica'] px-4 py-2"
+              >About Us</a
+            >
+            <a
+              href="our branch.html"
+              class="text-white text-base font-['helvetica'] px-4 py-2"
+              >Services/Activities</a
+            >
+            <a
+              href="event.html"
+              class="text-white text-base font-['helvetica'] px-4 py-2"
+              >Events</a
+            >
+            <a
+              href="our gallery.html"
+              class="text-white text-base font-['helvetica'] px-4 py-2"
+              >Gallery</a
+            >
+            <a
+              href="blog.html"
+              class="text-white text-base font-['helvetica'] px-4 py-2"
+              >Blog</a
+            >
+            <a
+              href="event.html"
+              class="text-white text-base font-['helvetica'] px-4 py-2"
+              >Projects</a
+            >
+            <a
+              href="contact us.html"
+              class="text-white text-base font-['helvetica'] px-4 py-2"
+              >Contact Us</a
+            >
+            <div class="px-4 py-2 bg-white rounded text-center">
+              <a
+                href="#"
+                class="text-[#249b00] text-base font-bold font-['helvetica']"
+                >Donate Now</a
+              >
+            </div>
+          </div>
         </nav>
-
-        <!-- Mobile Dropdown Menu -->
-        <div
-          id="mobile-menu"
-          class="hidden md:hidden absolute top-[50px] left-0 w-full bg-greenColor text-white text-center space-y-3 py-4"
-        >
-          <a href="#home" class="block">Home</a>
-          <a href="#about" class="block">About Us</a>
-          <a href="#service" class="block">Services</a>
-          <a href="#event" class="block">Events</a>
-          <a href="#gallery" class="block">Gallery</a>
-          <a href="#blog" class="block">Blog</a>
-          <a href="#project" class="block">Projects</a>
-          <a href="contact us.html" class="block">Contact Us</a>
-          <a href="#donate" class="block bg-[#249b00] py-2">Donate Now</a>
-        </div>
       </header>
+
+      <!-- CTA Button -->
+      <div
+        class="px-4 py-2 sm:px-[30px] sm:py-[12px] left-[20px] sm:left-[50px] md:left-[190.95px] bottom-10 md:top-[804.98px] absolute bg-[#249b00] inline-flex"
+      >
+        <div
+          class="text-center text-white text-sm sm:text-lg font-bold font-['helvetica'] leading-[30px]"
+        >
+          <a href="about us.html">Learn More</a>
+        </div>
+      </div>
+
+      <!-- Blur Effect -->
+      <div
+        class="w-full h-[50px] sm:h-[70px] md:h-[100px] left-0 md:left-[-0.05px] top-[664.98px] absolute bg-white/30 blur-3xl"
+      ></div>
+
+      <!-- Statistics Section -->
+      <div
+        class="w-full h-auto md:h-[200px] py-9 sm:py-6 md:py-5 top-[390px] md:top-[641px] absolute bg-[#249b00] flex flex-col md:flex-row justify-center items-center gap-4 sm:gap-6 md:gap-[20px]"
+      >
+        <div
+          class="w-full max-w-6xl flex flex-wrap justify-evenly md:justify-start items-center gap-[30px] md:gap-[180px] text-center"
+        >
+          <div class="flex flex-col gap-4 md:gap-8 md:mt-[10px] items-center">
+            <div
+              class="text-white text-xl font-['PlayfairDisplay'] sm:text-2xl md:text-[64px] font-semibold"
+            >
+              417
+            </div>
+            <div
+              class="text-white font-['helvetica'] text-xs sm:text-sm md:text-lg font-normal"
+            >
+              Members
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 md:gap-8 md:mt-[10px] items-center">
+            <div
+              class="text-white text-xl font-['PlayfairDisplay'] sm:text-2xl md:text-[64px] font-semibold"
+            >
+              10
+            </div>
+            <div
+              class="text-white font-['helvetica'] text-xs sm:text-sm md:text-lg font-normal"
+            >
+              Branches
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 md:gap-8 md:mt-[10px] items-center">
+            <div
+              class="text-white text-xl font-['PlayfairDisplay'] sm:text-2xl md:text-[64px] font-semibold"
+            >
+              25
+            </div>
+            <div
+              class="text-white font-['helvetica'] text-xs sm:text-sm md:text-lg font-normal"
+            >
+              Projects
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 md:gap-8 md:mt-[10px] items-center">
+            <div
+              class="text-white text-xl font-['PlayfairDisplay'] sm:text-2xl md:text-[64px] font-semibold"
+            >
+              37
+            </div>
+            <div
+              class="text-white font-['helvetica'] text-xs sm:text-sm md:text-lg font-normal leading-none"
+            >
+              Programs
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Navigation Bar -->
+
+      <!-- Hero Section -->
+      <div
+        class="h-[200px] md:h-[300px] px-4 sm:px-6 md:left-[120px] md:top-[70px] top-[70px] absolute flex flex-col md:flex-col justify-start items-start md:items-start gap-4"
+      >
+        <div class="flex flex-col justify-start items-start gap-4">
+          <h1
+            class="text-white text-[30px] text-lg sm:text-3xl w-[250px] md:w-[564px] md:h-[345px] md:text-[64px] md:leading-[80px] font-bold font-['PlayfairDisplay'] capitalize"
+          >
+            Promoting <br />
+            Knowledge and Empowerment for <br />
+            a Better World!
+          </h1>
+          <p
+            class="text-white w-[290px] md:w-auto text-xs sm:text-sm md:text-lg font-normal font-['helvetica'] leading-4 sm:leading-5 md:leading-[30px] max-w-lg"
+          >
+            Guided by Tijaniyyah values, we inspire change through education,
+            service, and spiritual growth.
+          </p>
+        </div>
+
+        <!-- CTA Buttons -->
+        <div
+          class="flex flex-wrap gap-2 mr-[38px] md:mr-[0px] sm:gap-3 sm:mt-5"
+        >
+          <a
+            href="about us.html"
+            class="px-3 sm:px-5 py-2 sm:py-3 bg-[#249b00] text-white text-xs sm:text-lg font-bold flex items-center gap-2"
+          >
+            Learn More <img src="img/Union (1).png" alt="" class="w-4 sm:w-5" />
+          </a>
+          <a
+            href="#"
+            class="px-3 sm:px-5 py-2 sm:py-3 bg-white text-[#249b00] text-xs sm:text-lg font-bold flex items-center gap-2"
+          >
+            Donate Now <img src="img/Union.png" alt="" class="w-4 sm:w-5" />
+          </a>
+        </div>
+      </div>
     </div>
 
     <div id="about">
@@ -522,10 +736,55 @@
             <div class="absolute bottom-4 left-4 text-white">
               <h3 class="text-lg font-bold">Giwa Usman Adebayo</h3>
               <p class="text-sm">BOT Chairman</p>
-              <a href="#" class="mt-2 text-sm underline">View Full Profile</a>
+              <a
+                href="#"
+                class="mt-2 text-sm underline"
+                data-toggle="modal"
+                data-target="#profile-modal"
+                >View Full Profile</a
+              >
             </div>
           </div>
 
+          <div
+            id="profile-modal"
+            class="modal flex justify-center items-center"
+            tabindex="-1"
+            role="dialog"
+          >
+            <div class="modal-dialog" role="document">
+              <div class="modal-content items-center">
+                <div class="modal-header">
+                  <img
+                    src="img/Shaykh[1].png"
+                    alt=""
+                    class="w-[200px] h-[200px]"
+                  />
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- Modal content goes here -->
+                  <p>This is the full profile content.</p>
+                </div>
+                <div class="modal-footer">
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    data-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Member 2 -->
           <div class="relative rounded-t-lg overflow-hidden">
             <img
@@ -539,7 +798,13 @@
             <div class="absolute bottom-4 left-4 text-white">
               <h3 class="text-lg font-bold">Adigun Ibraheem</h3>
               <p class="text-sm">President</p>
-              <a href="#" class="mt-2 text-sm underline">View Full Profile</a>
+              <a
+                href="#"
+                class="mt-2 text-sm underline"
+                data-toggle="modal"
+                data-target="#profile-modal"
+                >View Full Profile</a
+              >
             </div>
           </div>
 
@@ -556,7 +821,13 @@
             <div class="absolute bottom-4 left-4 text-white">
               <h3 class="text-lg font-bold">Hashiru Habibat</h3>
               <p class="text-sm">Vice President (Female)</p>
-              <a href="#" class="mt-2 text-sm underline">View Full Profile</a>
+              <a
+                href="#"
+                class="mt-2 text-sm underline"
+                data-toggle="modal"
+                data-target="#profile-modal"
+                >View Full Profile</a
+              >
             </div>
           </div>
 
@@ -584,7 +855,7 @@
         class="w-full h-[1630px] py-10 px-8 lg:h-[1035px] mt-[30px] lg:px-[135px] lg:pt-20 lg:pb-[66px] bg-[#edf7f5] lg:justify-center lg:items-center lg:inline-flex overflow-hidden lg:mt-[40px]"
       >
         <div
-          class="lg:grow lg:shrink lg:basis-0 lg:self-stretch lg:flex-col lg:justify-start lg:items-start lg:gap-[30px] lg:inline-flex"
+          class="lg:grow lg:shrink lg:basis-0 lg:self-stretch lg:flex-col lg:justify-start lg:items-start lg:gap-[30px] lg:inline-flex ml-[150px]"
         >
           <div
             class="lg:self-stretch lg:h-[202px] lg:flex-col lg:ml-[80px] lg:justify-start lg:items-start lg:gap-[30px] lg:flex flex flex-col justify-center items-center"
@@ -1129,7 +1400,7 @@
 
           <!-- Branches Grid -->
           <div
-            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6 w-full justify-center"
+            class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-16 w-full justify-center"
           >
             <!-- Branch Item -->
             <div
@@ -2378,10 +2649,10 @@
     </div>
 
     <footer class="bg-[#040f00] text-[#96a5aa] py-12">
-      <div class="max-w-[1200px] mx-auto px-4">
+      <div class="max-w-[1200px] px-6">
         <!-- Footer Sections -->
         <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 mb-8"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mb-8"
         >
           <!-- MNIDF Section -->
           <div>
@@ -2565,6 +2836,6 @@
         </div>
       </div>
     </footer>
-    <script src="main.js"></script>
+    <script src="modal.js"></script>
   </body>
 </html>

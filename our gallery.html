@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our gallery</title>
-    <link rel="stylesheet" href="/dist/output.css" />
-    <link rel="stylesheet" href="/src/input.css" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="input.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -35,83 +35,163 @@
   </head>
   <body>
     <header
-      class="w-full h-[85px] fixed top-0 left-0 z-50 py-[15px] bg-[#249b00] flex-col justify-center items-center gap-2 inline-flex"
+      class="w-full h-[85px] fixed top-0 left-0 z-50 py-4 bg-[#249b00] flex flex-col justify-center items-center"
     >
-      <nav class="relative justify-start items-center gap-[147px] inline-flex">
-        <img class="w-[60px] h-[43px]" src="img/logo img.png" />
-        <div class="justify-start items-center gap-10 flex">
-          <div class="justify-start items-center gap-9 flex">
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+      <nav
+        class="w-full flex flex-wrap md:justify-evenly justify-between items-center px-4 md:px-8"
+      >
+        <img
+          class="w-[50px] h-[35px] md:w-[60px] md:h-[43px]"
+          src="img/logo img.png"
+        />
+
+        <div class="hidden md:flex justify-start items-center gap-6 md:gap-10">
+          <div
+            class="flex flex-col md:flex-row justify-start items-center gap-4 md:gap-6"
+          >
+            <a
+              href="index.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Home</a
             >
-              <a href="index.html"> Home </a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+            <a
+              href="about us.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >About Us</a
             >
-              <a href="about us.html"> About Us </a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+            <a
+              href="our branch.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Services/Activities</a
             >
-              <a href="our branch.html"> Services/Activities </a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+            <a
+              href="event.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Events</a
             >
-              <a href="event.html"> Events </a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+            <a
+              href="our gallery.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Gallery</a
             >
-              <a href="our gallery.html"> Gallery </a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+            <a
+              href="blog.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Blog</a
             >
-              <a href="blog.html"> Blog </a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+            <a
+              href="event.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Projects</a
             >
-              <a href="event.html"> Projects </a>
-            </div>
-            <div
-              class="text-center text-white text-base font-normal font-['helvetica'] leading-7"
+            <a
+              href="contact us.html"
+              class="text-white text-sm md:text-base font-normal font-['helvetica'] leading-6 md:leading-7"
+              >Contact Us</a
             >
-              <a href="contact us.html"> Contact Us </a>
-            </div>
           </div>
           <div
-            class="px-5 py-2 bg-white rounded justify-center items-center gap-2.5 flex"
+            class="px-4 py-2 bg-white rounded flex justify-center items-center"
           >
-            <div
-              class="text-center text-[#249b00] text-base font-bold font-['helvetica'] leading-7"
+            <a
+              href="#"
+              class="text-[#249b00] text-sm md:text-base font-bold font-['helvetica'] leading-6 md:leading-7"
+              >Donate Now</a
             >
-              <a href="#"> Donate Now </a>
-            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <div class="md:hidden">
+          <button id="menu-button" class="text-white focus:outline-none">
+            <svg
+              class="w-6 h-6"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16M4 18h16"
+              ></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div
+          id="mobile-menu"
+          class="hidden w-full flex flex-col bg-[#249b00] mt-4 space-y-4 md:hidden"
+        >
+          <a
+            href="index.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Home</a
+          >
+          <a
+            href="about us.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >About Us</a
+          >
+          <a
+            href="our branch.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Services/Activities</a
+          >
+          <a
+            href="event.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Events</a
+          >
+          <a
+            href="our gallery.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Gallery</a
+          >
+          <a
+            href="blog.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Blog</a
+          >
+          <a
+            href="event.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Projects</a
+          >
+          <a
+            href="contact us.html"
+            class="text-white text-base font-['helvetica'] px-4 py-2"
+            >Contact Us</a
+          >
+          <div class="px-4 py-2 bg-white rounded text-center">
+            <a
+              href="#"
+              class="text-[#249b00] text-base font-bold font-['helvetica']"
+              >Donate Now</a
+            >
           </div>
         </div>
       </nav>
     </header>
 
     <main>
-      <div
-        class="h-[291px] py-20 bg-white flex-col justify-start items-center gap-4 inline-flex"
-      >
+      <div class="h-auto py-20 bg-white flex flex-col items-center gap-4">
         <div
-          class="flex-col justify-center items-center gap-2 flex ml-[525px] mt-[20px]"
+          class="flex flex-col items-center gap-2 w-full max-w-screen-lg px-4 text-center mt-[30px]"
         >
-          <div
-            class="text-center text-[#181d1f] text-[64px] font-bold font-['PlayfairDisplay']"
+          <h1
+            class="text-[#181d1f] text-4xl md:text-6xl font-bold font-['PlayfairDisplay']"
           >
             Our Gallery
-          </div>
-          <div
-            class="text-center text-[#5d6a6e] text-lg font-normal font-['helvetica'] leading-[30px]"
+          </h1>
+          <p
+            class="text-[#5d6a6e] text-base md:text-lg font-normal font-['helvetica'] leading-[30px]"
           >
-            <span> A View of Our Events, Projects, Branches, Activities. </span>
-          </div>
+            A View of Our Events, Projects, Branches, Activities.
+          </p>
         </div>
       </div>
 
@@ -956,232 +1036,255 @@
       </div>
 
       <div
-        class="h-[700px] w-full pl-[134.50px] pr-24 pt-[49.70px] pb-[50.30px] bg-[#edf7f5] justify-end items-center gap-[98px] inline-flex overflow-hidden"
+        class="w-full min-h-[700px] px-6 md:px-12 lg:px-[134.50px] py-12 bg-[#edf7f5] flex flex-col-reverse lg:flex-row justify-end items-center gap-12 lg:gap-[98px]"
       >
+        <!-- Left Content -->
         <div
-          class="w-[502.50px] self-stretch flex-col justify-start items-start gap-[30px] inline-flex"
+          class="w-full lg:w-[502.50px] flex flex-col justify-start items-start gap-6 lg:gap-[30px]"
         >
           <div
-            class="self-stretch h-[342px] flex-col justify-start items-start gap-6 flex mt-[60px]"
+            class="w-full flex flex-col justify-start items-start gap-6 mt-6 lg:mt-[60px]"
           >
-            <div
-              class="self-stretch text-[#249b00] text-5xl font-semibold font-['PlayfairDisplay'] capitalize leading-[56px]"
+            <h2
+              class="text-[#249b00] text-3xl md:text-4xl lg:text-5xl font-semibold font-['PlayfairDisplay'] capitalize leading-snug"
             >
               Support Our Mission to Empower Communities!
-            </div>
-            <div
-              class="self-stretch text-[#5d6a6e] text-lg font-normal font-['helvetica'] leading-[30px]"
+            </h2>
+            <p
+              class="text-[#5d6a6e] text-base md:text-lg font-normal font-['Helvetica'] leading-[30px]"
             >
               Your contributions fuel our efforts in education, humanitarian
               relief, and empowerment. Your contributions fuel our efforts in
               education, humanitarian relief, and empowerment. Your
               contributions fuel our efforts in education, humanitarian relief,
               and empowerment.
-            </div>
+            </p>
           </div>
+
+          <!-- Buttons -->
           <div
-            class="justify-start items-start gap-[30px] inline-flex mt-[15px]"
+            class="flex flex-row md:flex-row gap-4 lg:gap-[30px] mt-4 lg:mt-[5px]"
           >
-            <div
-              class="px-[25px] py-[15px] bg-white justify-start items-center gap-2.5 inline-flex"
+            <a
+              href="#"
+              class="px-6 py-3 bg-white text-[#249b00] text-lg font-bold font-['elvetica'] flex items-center gap-2 hover:bg-gray-100 transition"
             >
-              <div
-                class="text-center text-[#249b00] text-lg font-bold font-['helvetica'] leading-[30px]"
+              Donate Now
+              <img src="img/Union.png" alt="" class="w-6 md:w-8" />
+            </a>
+
+            <div class="flex flex-col items-start">
+              <a
+                href="#"
+                class="px-6 py-3 bg-[#249b00] text-white text-lg font-bold font-['elvetica'] flex items-center gap-2 hover:bg-[#1a7b00] transition"
               >
-                <a href="#" class="flex flex-row gap-1">
-                  <span> Donate Now </span>
-                  <img src="img/Union.png" alt="" class="w-8" />
-                </a>
-              </div>
-            </div>
-            <div class="flex-col justify-start items-end gap-[5px] inline-flex">
-              <div
-                class="px-[35px] py-[15px] bg-[#249b00] justify-start items-center gap-2.5 inline-flex"
+                Membership Due
+                <img src="img/Union (1).png" alt="" class="w-6 md:w-8" />
+              </a>
+              <span class="text-[#878787] text-xs mt-1"
+                >For existing members only *</span
               >
-                <div
-                  class="text-center text-white text-lg font-bold font-['helvetica'] leading-[30px]"
-                >
-                  <a href="#" class="flex flex-row gap-3">
-                    <span> Membership Due </span>
-                    <img src="img/Union (1).png" alt="" class="w-8" />
-                  </a>
-                </div>
-              </div>
-              <div
-                class="text-[#878787] text-[11px] font-normal font-['Helvetica']"
-              >
-                For existing members only *
-              </div>
             </div>
           </div>
         </div>
-        <div class="w-[609px] h-[600px] relative">
+
+        <!-- Right Image Section -->
+        <div class="w-full max-w-[609px] h-auto relative flex justify-center">
           <div
-            class="w-[474.74px] h-[531.07px] left-[134.26px] top-0 absolute border-4 border-[#249b00]"
+            class="absolute w-[90%] lg:w-[474.74px] h-[90%] lg:h-[531.07px] border-4 border-[#249b00] top-0 left-6 lg:left-[134.26px]"
           ></div>
-          <div class="w-[570px] h-[570px] left-0 top-[30px] absolute">
-            <img src="img/member 3.png" alt="" />
+          <div
+            class="w-[90%] max-w-[570px] h-auto mt-6 lg:mt-[30px] relative z-10"
+          >
+            <img src="img/member 3.png" alt="" class="w-full h-auto" />
           </div>
         </div>
       </div>
     </main>
-    <footer>
-      <div id="contact" class="h-[458px] relative bg-[#040f00]">
-        <div class="w-[1440px] h-[458px] left-0 top-0 absolute"></div>
-        <div class="w-[180px] h-9 left-[1124.95px] top-[382.70px] absolute">
-          <div class="w-9 h-9 left-0 top-0 absolute">
-            <div
-              class="w-9 h-9 left-0 top-0 absolute bg-[#4c5c61] hover:bg-[#249b00]"
-            ></div>
-          </div>
-          <div class="w-9 h-9 left-[144px] top-0 absolute">
-            <div
-              class="w-9 h-9 left-0 top-0 absolute bg-[#4c5c61] hover:bg-[#249b00]"
-            ></div>
-            <div class="w-2.5 h-2.5 left-[13px] top-[13px] absolute"></div>
-          </div>
-          <div class="w-9 h-9 left-[96px] top-0 absolute">
-            <div
-              class="w-9 h-9 left-0 top-0 absolute bg-[#4c5c61] hover:bg-[#249b00]"
-            ></div>
-          </div>
-          <div class="w-9 h-9 left-[48px] top-0 absolute">
-            <div
-              class="w-9 h-9 left-0 top-0 absolute bg-[#4c5c61] hover:bg-[#249b00]"
-            ></div>
-          </div>
-        </div>
-        <div class="left-[134.95px] top-[357.70px] absolute">
-          <div
-            class="left-[0.05px] top-[46.30px] w-[500px] absolute text-[#878787] text-xs font-normal font-['helvetica'] leading-normal"
-          >
-            <span>
-              © 2024 Muassasat Nasrul Ilm Wa Da’awat Foundation. All Rights
-              Reserved.</span
-            >
-          </div>
-          <img class="w-[207px] h-[42px] left-0 top-0" src="img/footer.png" />
-        </div>
+    <footer class="bg-[#040f00] text-[rgb(150,165,170)] py-12">
+      <div class="max-w-[1200px] px-6">
+        <!-- Footer Sections -->
         <div
-          class="w-[1170px] h-px left-[135px] top-[339px] absolute bg-[#364145] border border-[#364145]"
-        ></div>
-        <div
-          class="left-[135px] top-[69.70px] absolute justify-start items-start gap-[91px] inline-flex"
+          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-2 mb-8"
         >
-          <div
-            class="w-[100px] flex-col justify-start items-start gap-[18px] inline-flex"
-          >
-            <div
-              class="self-stretch text-white text-xl font-bold font-['PlayfairDisplay'] leading-[30px]"
+          <!-- MNIDF Section -->
+          <div>
+            <h3
+              class="text-white text-xl font-bold font-['PlayfairDisplay'] mb-4"
             >
               MNIDF
-            </div>
-            <div
-              class="self-stretch text-[#96a5aa] text-base font-normal font-['helvetica'] leading-7"
-            >
-              About Us
-            </div>
-            <div
-              class="self-stretch text-[#96a5aa] text-base font-normal font-['helvetica'] leading-7"
-            >
-              Services/Activities
-            </div>
-            <div
-              class="self-stretch text-[#96a5aa] text-base font-normal font-['helvetica'] leading-7"
-            >
-              Support Us
-            </div>
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Services/ <br />Activities</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Support Us</a
+                >
+              </li>
+            </ul>
           </div>
-          <div
-            class="w-[72px] flex-col justify-start items-start gap-5 inline-flex"
-          >
-            <div
-              class="self-stretch text-white text-xl font-bold font-['PlayfairDisplay'] leading-[30px]"
+
+          <!-- Process Section -->
+          <div>
+            <h3
+              class="text-white text-xl font-bold font-['PlayfairDisplay'] mb-4"
             >
               Process
-            </div>
-            <div
-              class="self-stretch text-[#96a5aa] text-base font-normal font-['helvetica'] leading-7"
-            >
-              Gallery
-            </div>
-            <div
-              class="self-stretch text-[#96a5aa] text-base font-normal font-['helvetica'] leading-7"
-            >
-              Events
-            </div>
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Events</a
+                >
+              </li>
+            </ul>
           </div>
-          <div
-            class="w-[123px] flex-col justify-start items-start gap-5 inline-flex"
-          >
-            <div
-              class="self-stretch text-white text-xl font-bold font-['PlayfairDisplay'] leading-[30px]"
+
+          <!-- Quick Links Section -->
+          <div>
+            <h3
+              class="text-white text-xl font-bold font-['PlayfairDisplay'] mb-4"
             >
               Quick Links
-            </div>
-            <div
-              class="self-stretch text-[#96a5aa] text-base font-normal font-['helvetica'] leading-7"
-            >
-              Leadership Team
-            </div>
-            <div
-              class="self-stretch text-[#96a5aa] text-base font-normal font-['helvetica'] leading-7"
-            >
-              FAQs
-            </div>
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Leadership Team</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >FAQs</a
+                >
+              </li>
+            </ul>
           </div>
-          <div
-            class="w-[75px] flex-col justify-start items-start gap-[19px] inline-flex"
-          >
-            <div
-              class="self-stretch text-white text-xl font-bold font-['PlayfairDisplay'] leading-[30px]"
+
+          <!-- Updates Section -->
+          <div>
+            <h3
+              class="text-white text-xl font-bold font-['PlayfairDisplay'] mb-4"
             >
               Updates
-            </div>
-            <div
-              class="text-[#96a5aa] text-base font-normal font-['helvetica'] leading-7"
-            >
-              Blogs & Insights
-            </div>
-            <div
-              class="text-[#96a5aa] text-base font-normal font-['helvetica'] leading-7"
-            >
-              Zakat Calculator
-            </div>
-            <div
-              class="text-[#96a5aa] text-base font-normal font-['helvetica'] leading-7"
-            >
-              Membership
-            </div>
+            </h3>
+            <ul class="space-y-2">
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Blogs & Insights</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Zakat Calculator</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="hover:text-[#249b00] transition font-['helvetica']"
+                  >Membership</a
+                >
+              </li>
+            </ul>
           </div>
-          <div
-            class="w-[434px] flex-col justify-start items-start gap-[27px] inline-flex"
-          >
-            <div
-              class="self-stretch text-white text-xl font-bold font-['PlayfairDisplay'] leading-[30px]"
+
+          <!-- Newsletter Section -->
+          <div>
+            <h3
+              class="text-white text-xl font-bold font-['PlayfairDisplay'] mb-4"
             >
               Newsletter
-            </div>
-            <div class="self-stretch justify-between items-center inline-flex">
-              <div
-                class="w-[258px] h-[60px] p-4 border border-[#364145] justify-start items-center gap-2.5 flex"
+            </h3>
+            <div class="flex flex-col sm:flex-row items-center gap-3">
+              <input
+                type="email"
+                placeholder="Email Address"
+                class="w-full sm:w-[258px] h-[60px] px-4 text-base text-[#96a5aa] border border-[#364145] bg-transparent focus:outline-none"
+              />
+              <button
+                class="px-7 py-3 bg-[#249b00] text-white font-bold text-lg hover:bg-[#1e7e00] font-['helvetica'] transition"
               >
-                <div
-                  class="text-[#96a5aa] text-base font-normal font-['helvetica'] leading-7"
-                >
-                  Email Address
-                </div>
-              </div>
-              <div
-                class="px-[35px] py-[15px] bg-[#249b00] justify-start items-center gap-2.5 flex"
-              >
-                <div
-                  class="text-center text-white text-lg font-bold font-['helvetica'] leading-[30px]"
-                >
-                  Subscribe
-                </div>
-              </div>
+                Subscribe
+              </button>
             </div>
+          </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-[#364145] my-6"></div>
+        <div
+          class="flex md:flex-row-reverse flex-col md:justify-between mt-[15px]"
+        >
+          <!-- Social Icons -->
+          <div class="flex justify-center space-x-4 mb-4">
+            <a
+              href="#"
+              class="w-9 h-9 bg-[#4c5c61] hover:bg-[#249b00] transition flex items-center justify-center"
+            >
+              <i class="fab fa-facebook-f text-white"></i>
+            </a>
+            <a
+              href="#"
+              class="w-9 h-9 bg-[#4c5c61] hover:bg-[#249b00] transition flex items-center justify-center"
+            >
+              <i class="fab fa-linkedin-in text-white"></i>
+            </a>
+            <a
+              href="#"
+              class="w-9 h-9 bg-[#4c5c61] hover:bg-[#249b00] transition flex items-center justify-center"
+            >
+              <i class="fab fa-twitter text-white"></i>
+            </a>
+            <a
+              href="#"
+              class="w-9 h-9 bg-[#4c5c61] hover:bg-[#249b00] transition flex items-center justify-center"
+            >
+              <i class="fab fa-instagram text-white"></i>
+            </a>
+          </div>
+
+          <!-- Copyright Section -->
+          <div
+            class="flex flex-col md:justify-start md:items-start justify-center items-center"
+          >
+            <img src="img/footer.png" alt="" class="w-[200px]" />
+            <p class="text-center text-xs text-[#878787] font-['helvetica']">
+              © 2024 Muassasat Nasrul Ilm Wa Da’awat Foundation. All Rights
+              Reserved.
+            </p>
           </div>
         </div>
       </div>
