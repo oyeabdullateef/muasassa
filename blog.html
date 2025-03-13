@@ -724,71 +724,67 @@
       </div>
 
       <div
-        class="h-[700px] w-full pl-[134.50px] pr-24 pt-[49.70px] pb-[50.30px] bg-[#edf7f5] justify-end items-center gap-[98px] inline-flex overflow-hidden"
+        class="w-full min-h-[700px] px-6 md:px-12 lg:px-[134.50px] py-12 bg-[#edf7f5] flex flex-col-reverse lg:flex-row justify-end items-center gap-12 lg:gap-[98px]"
       >
+        <!-- Left Content -->
         <div
-          class="w-[502.50px] self-stretch flex-col justify-start items-start gap-[30px] inline-flex"
+          class="w-full lg:w-[502.50px] flex flex-col justify-start items-start gap-6 lg:gap-[30px]"
         >
           <div
-            class="self-stretch h-[342px] flex-col justify-start items-start gap-6 flex mt-[60px]"
+            class="w-full flex flex-col justify-start items-start gap-6 mt-6 lg:mt-[60px]"
           >
-            <div
-              class="self-stretch text-[#249b00] text-5xl font-semibold font-['PlayfairDisplay'] capitalize leading-[56px]"
+            <h2
+              class="text-[#249b00] text-3xl md:text-4xl lg:text-5xl font-semibold font-['PlayfairDisplay'] capitalize leading-snug"
             >
               Support Our Mission to Empower Communities!
-            </div>
-            <div
-              class="self-stretch text-[#5d6a6e] text-lg font-normal font-['helvetica'] leading-[30px]"
+            </h2>
+            <p
+              class="text-[#5d6a6e] text-base md:text-lg font-normal font-['Helvetica'] leading-[30px]"
             >
               Your contributions fuel our efforts in education, humanitarian
               relief, and empowerment. Your contributions fuel our efforts in
               education, humanitarian relief, and empowerment. Your
               contributions fuel our efforts in education, humanitarian relief,
               and empowerment.
-            </div>
+            </p>
           </div>
+
+          <!-- Buttons -->
           <div
-            class="justify-start items-start gap-[30px] inline-flex mt-[15px]"
+            class="flex flex-row md:flex-row gap-4 lg:gap-[30px] mt-4 lg:mt-[5px]"
           >
-            <div
-              class="px-[25px] py-[15px] bg-white justify-start items-center gap-2.5 inline-flex"
+            <a
+              href="#"
+              class="px-6 py-3 bg-white text-[#249b00] text-lg font-bold font-['elvetica'] flex items-center gap-2 hover:bg-gray-100 transition"
             >
-              <div
-                class="text-center text-[#249b00] text-lg font-bold font-['helvetica'] leading-[30px]"
+              Donate Now
+              <img src="img/Union.png" alt="" class="w-6 md:w-8" />
+            </a>
+
+            <div class="flex flex-col items-start">
+              <a
+                href="#"
+                class="px-6 py-3 bg-[#249b00] text-white text-lg font-bold font-['elvetica'] flex items-center gap-2 hover:bg-[#1a7b00] transition"
               >
-                <a href="#" class="flex flex-row gap-1">
-                  <span> Donate Now </span>
-                  <img src="img/Union.png" alt="" class="w-8" />
-                </a>
-              </div>
-            </div>
-            <div class="flex-col justify-start items-end gap-[5px] inline-flex">
-              <div
-                class="px-[35px] py-[15px] bg-[#249b00] justify-start items-center gap-2.5 inline-flex"
+                Membership Due
+                <img src="img/Union (1).png" alt="" class="w-6 md:w-8" />
+              </a>
+              <span class="text-[#878787] text-xs mt-1"
+                >For existing members only *</span
               >
-                <div
-                  class="text-center text-white text-lg font-bold font-['helvetica'] leading-[30px]"
-                >
-                  <a href="#" class="flex flex-row gap-3">
-                    <span> Membership Due </span>
-                    <img src="img/Union (1).png" alt="" class="w-8" />
-                  </a>
-                </div>
-              </div>
-              <div
-                class="text-[#878787] text-[11px] font-normal font-['Helvetica']"
-              >
-                For existing members only *
-              </div>
             </div>
           </div>
         </div>
-        <div class="w-[609px] h-[600px] relative">
+
+        <!-- Right Image Section -->
+        <div class="w-full max-w-[609px] h-auto relative flex justify-center">
           <div
-            class="w-[474.74px] h-[531.07px] left-[134.26px] top-0 absolute border-4 border-[#249b00]"
+            class="absolute w-[90%] lg:w-[474.74px] h-[90%] lg:h-[531.07px] border-4 border-[#249b00] top-0 left-6 lg:left-[134.26px]"
           ></div>
-          <div class="w-[570px] h-[570px] left-0 top-[30px] absolute">
-            <img src="img/member 3.png" alt="" />
+          <div
+            class="w-[90%] max-w-[570px] h-auto mt-6 lg:mt-[30px] relative z-10"
+          >
+            <img src="img/member 3.png" alt="" class="w-full h-auto" />
           </div>
         </div>
       </div>

@@ -402,13 +402,9 @@
           <!-- Description -->
           <div class="max-w-md mx-auto lg:mx-0">
             <p
-              class="text-[#5d6a6e] text-lg font-bold font-['helvetica'] leading-[30px]"
+              class="text-[#5d6a6e] text-lg text-justify font-normal font-['helvetica'] leading-[30px] mt-2"
             >
-              Muassasat Nasrul Ilm Wa Da’awat Foundation (MNIDF)
-            </p>
-            <p
-              class="text-[#5d6a6e] text-base sm:text-lg font-normal font-['helvetica'] leading-[28px] mt-2"
-            >
+              <b> Muassasat Nasrul Ilm Wa Da’awat Foundation (MNIDF)</b>
               is a global Islamic NGO inspired by the Tijaniyyah Sufi Order,
               committed to promoting balanced Islamic education, alleviating
               poverty, and fostering spiritual growth. Guided by our core values
@@ -422,14 +418,24 @@
           </div>
 
           <!-- Button -->
-          <div class="flex justify-center lg:justify-start">
-            <a
-              href="about us.html"
-              class="flex items-center bg-[#249b00] text-white font-bold text-lg px-6 py-3 hover:bg-green-700 transition-all"
-            >
-              <span>Learn More</span>
-              <img src="img/Union (1).png" alt="" class="w-6 ml-2" />
-            </a>
+          <div class="flex flex-row gap-10">
+            <div class="flex justify-center lg:justify-start">
+              <a
+                href="about us.html"
+                class="flex items-center bg-[#249b00] text-white font-bold text-lg px-6 py-3 hover:bg-green-700 transition-all"
+              >
+                <span>Learn More</span>
+                <img src="img/Union (1).png" alt="" class="w-6 ml-2" />
+              </a>
+            </div>
+            <div class="flex justify-center lg:justify-start">
+              <a
+                href="about us.html"
+                class="flex items-center bg-white text-[#249b00] font-bold text-lg px-6 py-3 hover:bg-green-700 hover:text-white transition-all"
+              >
+                <span>President speech</span>
+              </a>
+            </div>
           </div>
         </div>
       </div>
@@ -745,21 +751,12 @@
               >
             </div>
           </div>
-
-          <div
-            id="profile-modal"
-            class="modal flex justify-center items-center"
-            tabindex="-1"
-            role="dialog"
-          >
-            <div class="modal-dialog" role="document">
-              <div class="modal-content items-center">
-                <div class="modal-header">
-                  <img
-                    src="img/Shaykh[1].png"
-                    alt=""
-                    class="w-[200px] h-[200px]"
-                  />
+          <!-- first modal -->
+          <div id="profile-modal" class="modal w" tabindex="-1" role="dialog">
+            <div class="modal-dialog w-[1020px] mx-auto" role="document">
+              <!-- Reduced modal width -->
+              <div class="modal-content">
+                <div class="modal-header bg-[#0b0f08]">
                   <button
                     type="button"
                     class="close"
@@ -769,14 +766,147 @@
                     <span aria-hidden="true">&times;</span>
                   </button>
                 </div>
-                <div class="modal-body">
-                  <!-- Modal content goes here -->
-                  <p>This is the full profile content.</p>
+                <div class="modal-body items-center">
+                  <div
+                    class="flex flex-row justify-center items-center text-center align-top gap-10"
+                  >
+                    <img
+                      src="img/Shaykh[1].png"
+                      alt=""
+                      class="w-[350px] h-[300px] mb-4 rounded-lg mt-[5px]"
+                    />
+
+                    <div
+                      class="bg-[#edf7f5]/50 rounded-lg p-4 w-[390px] h-[300px] flex flex-col gap-[15px]"
+                    >
+                      <div class="flex items-center gap-2 mb-4">
+                        <div
+                          class="w-8 h-8 bg-[#249b00] rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                        >
+                          <i class="fa-regular fa-user"></i>
+                        </div>
+                        <span class="text-[#181d1f] font-bold">Full Name:</span>
+                        <span class="text-[#181d1f] font-normal"
+                          >Sheikh Giwa Usman Adebayo</span
+                        >
+                      </div>
+
+                      <div class="flex items-center gap-2 mb-4">
+                        <div
+                          class="w-8 h-8 bg-[#249b00] rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                        >
+                          <i class="fa-solid fa-database"></i>
+                        </div>
+                        <span class="text-[#181d1f] font-bold"
+                          >Official Position:</span
+                        >
+                        <span class="text-[#181d1f] font-normal"
+                          >BOT Chairman</span
+                        >
+                      </div>
+
+                      <div class="flex items-center gap-2 mb-4">
+                        <div
+                          class="w-8 h-8 bg-[#249b00] rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                        >
+                          <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <span class="text-[#181d1f] font-bold"
+                          >Professional title:</span
+                        >
+                        <span class="text-[#181d1f] font-normal"
+                          >BOT Chairman</span
+                        >
+                      </div>
+                      <div class="flex items-center gap-2 mb-4">
+                        <div
+                          class="w-8 h-8 bg-[#249b00] rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                        >
+                          <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                        <span class="text-[#181d1f] font-bold"
+                          >MNIDF Branch:</span
+                        >
+                        <span class="text-[#181d1f] font-normal"
+                          >BOT Chairman</span
+                        >
+                      </div>
+
+                      <div
+                        class="flex justify-center gap-[10px] text-[#181d1f] text-lg"
+                      >
+                        <a href="#" class="hover:text-blue-500 w-20 h-20"
+                          ><i class="fa-solid fa-envelope"></i
+                        ></a>
+                        <a href="#" class="hover:text-green-500 w-20 h-20"
+                          ><i class="fa-solid fa-phone"></i
+                        ></a>
+                        <a href="#" class="hover:text-blue-700 w-20 h-20"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col justify-center items-center gap-[20px] mt-[10px]"
+                  >
+                    <div class="items-center bg-[#edf7f5]/50 rounded-lg p-4">
+                      <h1
+                        class="capitalize font-['PlayfairDisplay'] font-bold text-2xl text-start"
+                      >
+                        brief biography
+                      </h1>
+                      <p
+                        class="capitalize font-['helvetica'] text-[15px] mt-[20px] text-start"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem ex cum illo nihil quo earum vitae labore
+                        voluptas magni ut debitis aliquid non tempore, in fugiat
+                        dolorum officia aut vel, voluptas magni ut debitis
+                        aliquid non tempore, in fugiat dolorum officia aut vel,
+                        voluptas magni ut debitis aliquid non tempore, in fugiat
+                        dolorum officia aut vel, voluptas magni ut debitis
+                        aliquid non tempore, in fugiat dolorum officia aut vel.
+                      </p>
+                    </div>
+                    <div class="items-center bg-[#edf7f5]/50 rounded-lg p-4">
+                      <h1
+                        class="capitalize font-['PlayfairDisplay'] font-bold text-2xl text-start"
+                      >
+                        educational background
+                      </h1>
+                      <p
+                        class="capitalize font-['helvetica'] text-[15px] mt-[20px] text-start"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem ex cum illo nihil quo earum vitae labore
+                        voluptas magni ut debitis aliquid non tempore, in fugiat
+                        dolorum officia aut vel.
+                      </p>
+                    </div>
+                    <div
+                      class="items-center mb-[20px] bg-[#edf7f5]/50 rounded-lg p-4"
+                    >
+                      <h1
+                        class="capitalize font-['PlayfairDisplay'] font-bold text-2xl text-start"
+                      >
+                        work/professional experience
+                      </h1>
+                      <p
+                        class="capitalize font-['helvetica'] text-[15px] mt-[20px] text-start"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem ex cum illo nihil quo earum vitae labore
+                        voluptas magni ut debitis aliquid non tempore, in fugiat
+                        dolorum officia aut vel.
+                      </p>
+                    </div>
+                  </div>
                 </div>
-                <div class="modal-footer">
+                <div class="modal-footer flex justify-center">
                   <button
                     type="button"
-                    class="btn btn-secondary"
+                    class="btn btn-secondary hover:bg-gray-700 hover:text-white px-4 py-2 rounded"
                     data-dismiss="modal"
                   >
                     Cancel
@@ -802,12 +932,175 @@
                 href="#"
                 class="mt-2 text-sm underline"
                 data-toggle="modal"
-                data-target="#profile-modal"
+                data-target="#profilemodal"
                 >View Full Profile</a
               >
             </div>
           </div>
+          <!-- second modal -->
+          <div id="profilemodal" class="modal w" tabindex="-1" role="dialog">
+            <div class="modal-dialog w-[1010px] mx-auto" role="document">
+              <!-- Reduced modal width -->
+              <div class="modal-content">
+                <div class="modal-header bg-[#0b0f08]">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body items-center">
+                  <div
+                    class="flex flex-row justify-center items-center text-center align-top gap-10"
+                  >
+                    <img
+                      src="img/President.png"
+                      alt=""
+                      class="w-[350px] h-[300px] mb-4 rounded-lg mt-[5px]"
+                    />
 
+                    <div
+                      class="bg-[#edf7f5]/50 rounded-lg p-4 w-[390px] h-[300px] flex flex-col gap-[15px]"
+                    >
+                      <div class="flex items-center gap-2 mb-4">
+                        <div
+                          class="w-8 h-8 bg-[#249b00] rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                        >
+                          <i class="fa-regular fa-user"></i>
+                        </div>
+                        <span class="text-[#181d1f] font-bold">Full Name:</span>
+                        <span class="text-[#181d1f] font-normal"
+                          >Adigun Ibraheem</span
+                        >
+                      </div>
+
+                      <div class="flex items-center gap-2 mb-4">
+                        <div
+                          class="w-8 h-8 bg-[#249b00] rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                        >
+                          <i class="fa-solid fa-database"></i>
+                        </div>
+                        <span class="text-[#181d1f] font-bold"
+                          >Official Position:</span
+                        >
+                        <span class="text-[#181d1f] font-normal"
+                          >President</span
+                        >
+                      </div>
+
+                      <div class="flex items-center gap-2 mb-4">
+                        <div
+                          class="w-8 h-8 bg-[#249b00] rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                        >
+                          <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <span class="text-[#181d1f] font-bold"
+                          >Professional title:</span
+                        >
+                        <span class="text-[#181d1f] font-normal"
+                          >BOT Chairman</span
+                        >
+                      </div>
+                      <div class="flex items-center gap-2 mb-4">
+                        <div
+                          class="w-8 h-8 bg-[#249b00] rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                        >
+                          <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                        <span class="text-[#181d1f] font-bold"
+                          >MNIDF Branch:</span
+                        >
+                        <span class="text-[#181d1f] font-normal"
+                          >President</span
+                        >
+                      </div>
+
+                      <div
+                        class="flex justify-center gap-[10px] text-[#181d1f] text-lg"
+                      >
+                        <a href="#" class="hover:text-blue-500 w-20 h-20"
+                          ><i class="fa-solid fa-envelope"></i
+                        ></a>
+                        <a href="#" class="hover:text-green-500 w-20 h-20"
+                          ><i class="fa-solid fa-phone"></i
+                        ></a>
+                        <a href="#" class="hover:text-blue-700 w-20 h-20"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col justify-center items-center gap-[20px] mt-[10px]"
+                  >
+                    <div class="items-center bg-[#edf7f5]/50 rounded-lg p-4">
+                      <h1
+                        class="capitalize font-['PlayfairDisplay'] font-bold text-2xl text-start"
+                      >
+                        brief biography
+                      </h1>
+                      <p
+                        class="capitalize font-['helvetica'] text-[15px] mt-[20px] text-start"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem ex cum illo nihil quo earum vitae labore
+                        voluptas magni ut debitis aliquid non tempore, in fugiat
+                        dolorum officia aut vel, voluptas magni ut debitis
+                        aliquid non tempore, in fugiat dolorum officia aut vel,
+                        voluptas magni ut debitis aliquid non tempore, in fugiat
+                        dolorum officia aut vel, voluptas magni ut debitis
+                        aliquid non tempore, in fugiat dolorum officia aut vel.
+                      </p>
+                    </div>
+                    <div class="items-center bg-[#edf7f5]/50 rounded-lg p-4">
+                      <h1
+                        class="capitalize font-['PlayfairDisplay'] font-bold text-2xl text-start"
+                      >
+                        educational background
+                      </h1>
+                      <p
+                        class="capitalize font-['helvetica'] text-[15px] mt-[20px] text-start"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem ex cum illo nihil quo earum vitae labore
+                        voluptas magni ut debitis aliquid non tempore, in fugiat
+                        dolorum officia aut vel.
+                      </p>
+                    </div>
+                    <div
+                      class="items-center mb-[20px] bg-[#edf7f5]/50 rounded-lg p-4"
+                    >
+                      <h1
+                        class="capitalize font-['PlayfairDisplay'] font-bold text-2xl text-start"
+                      >
+                        work/professional experience
+                      </h1>
+                      <p
+                        class="capitalize font-['helvetica'] text-[15px] mt-[20px] text-start"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem ex cum illo nihil quo earum vitae labore
+                        voluptas magni ut debitis aliquid non tempore, in fugiat
+                        dolorum officia aut vel.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer flex justify-center">
+                  <button
+                    type="button"
+                    class="btn btn-secondary hover:bg-gray-700 hover:text-white px-4 py-2 rounded"
+                    data-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Member 3 -->
           <div class="relative rounded-t-lg overflow-hidden">
             <img
@@ -825,12 +1118,175 @@
                 href="#"
                 class="mt-2 text-sm underline"
                 data-toggle="modal"
-                data-target="#profile-modal"
+                data-target="#profileModal"
                 >View Full Profile</a
               >
             </div>
           </div>
+          <!-- third modal -->
+          <div id="profileModal" class="modal w" tabindex="-1" role="dialog">
+            <div class="modal-dialog w-[1010px] mx-auto" role="document">
+              <!-- Reduced modal width -->
+              <div class="modal-content">
+                <div class="modal-header bg-[#0b0f08]">
+                  <button
+                    type="button"
+                    class="close"
+                    data-dismiss="modal"
+                    aria-label="Close"
+                  >
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body items-center">
+                  <div
+                    class="flex flex-row justify-center items-center text-center align-top gap-10"
+                  >
+                    <img
+                      src="img/VP.png"
+                      alt=""
+                      class="w-[350px] h-[300px] mb-4 rounded-lg mt-[5px]"
+                    />
 
+                    <div
+                      class="bg-[#edf7f5]/50 rounded-lg p-4 w-[390px] h-[300px] flex flex-col gap-[15px]"
+                    >
+                      <div class="flex items-center gap-2 mb-4">
+                        <div
+                          class="w-8 h-8 bg-[#249b00] rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                        >
+                          <i class="fa-regular fa-user"></i>
+                        </div>
+                        <span class="text-[#181d1f] font-bold">Full Name:</span>
+                        <span class="text-[#181d1f] font-normal"
+                          >Hashiru Habibat</span
+                        >
+                      </div>
+
+                      <div class="flex items-center gap-2 mb-4">
+                        <div
+                          class="w-8 h-8 bg-[#249b00] rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                        >
+                          <i class="fa-solid fa-database"></i>
+                        </div>
+                        <span class="text-[#181d1f] font-bold"
+                          >Official Position:</span
+                        >
+                        <span class="text-[#181d1f] font-normal">
+                          Vice President</span
+                        >
+                      </div>
+
+                      <div class="flex items-center gap-2 mb-4">
+                        <div
+                          class="w-8 h-8 bg-[#249b00] rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                        >
+                          <i class="fa-solid fa-user-tie"></i>
+                        </div>
+                        <span class="text-[#181d1f] font-bold"
+                          >Professional title:</span
+                        >
+                        <span class="text-[#181d1f] font-normal"
+                          >BOT Chairman</span
+                        >
+                      </div>
+                      <div class="flex items-center gap-2 mb-4">
+                        <div
+                          class="w-8 h-8 bg-[#249b00] rounded-full flex items-center justify-center text-white font-semibold text-sm"
+                        >
+                          <i class="fa-solid fa-code-branch"></i>
+                        </div>
+                        <span class="text-[#181d1f] font-bold"
+                          >MNIDF Branch:</span
+                        >
+                        <span class="text-[#181d1f] font-normal"
+                          >Vice President</span
+                        >
+                      </div>
+
+                      <div
+                        class="flex justify-center gap-[10px] text-[#181d1f] text-lg"
+                      >
+                        <a href="#" class="hover:text-blue-500 w-20 h-20"
+                          ><i class="fa-solid fa-envelope"></i
+                        ></a>
+                        <a href="#" class="hover:text-green-500 w-20 h-20"
+                          ><i class="fa-solid fa-phone"></i
+                        ></a>
+                        <a href="#" class="hover:text-blue-700 w-20 h-20"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="flex flex-col justify-center items-center gap-[20px] mt-[10px]"
+                  >
+                    <div class="items-center bg-[#edf7f5]/50 rounded-lg p-4">
+                      <h1
+                        class="capitalize font-['PlayfairDisplay'] font-bold text-2xl text-start"
+                      >
+                        brief biography
+                      </h1>
+                      <p
+                        class="capitalize font-['helvetica'] text-[15px] mt-[20px] text-start"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem ex cum illo nihil quo earum vitae labore
+                        voluptas magni ut debitis aliquid non tempore, in fugiat
+                        dolorum officia aut vel, voluptas magni ut debitis
+                        aliquid non tempore, in fugiat dolorum officia aut vel,
+                        voluptas magni ut debitis aliquid non tempore, in fugiat
+                        dolorum officia aut vel, voluptas magni ut debitis
+                        aliquid non tempore, in fugiat dolorum officia aut vel.
+                      </p>
+                    </div>
+                    <div class="items-center bg-[#edf7f5]/50 rounded-lg p-4">
+                      <h1
+                        class="capitalize font-['PlayfairDisplay'] font-bold text-2xl text-start"
+                      >
+                        educational background
+                      </h1>
+                      <p
+                        class="capitalize font-['helvetica'] text-[15px] mt-[20px] text-start"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem ex cum illo nihil quo earum vitae labore
+                        voluptas magni ut debitis aliquid non tempore, in fugiat
+                        dolorum officia aut vel.
+                      </p>
+                    </div>
+                    <div
+                      class="items-center mb-[20px] bg-[#edf7f5]/50 rounded-lg p-4"
+                    >
+                      <h1
+                        class="capitalize font-['PlayfairDisplay'] font-bold text-2xl text-start"
+                      >
+                        work/professional experience
+                      </h1>
+                      <p
+                        class="capitalize font-['helvetica'] text-[15px] mt-[20px] text-start"
+                      >
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Voluptatem ex cum illo nihil quo earum vitae labore
+                        voluptas magni ut debitis aliquid non tempore, in fugiat
+                        dolorum officia aut vel.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="modal-footer flex justify-center">
+                  <button
+                    type="button"
+                    class="btn btn-secondary hover:bg-gray-700 hover:text-white px-4 py-2 rounded"
+                    data-dismiss="modal"
+                  >
+                    Cancel
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
           <!-- Member 4 -->
 
           <div class="relative rounded-lg overflow-hidden lg:hidden">
@@ -1380,7 +1836,7 @@
             class="w-full flex flex-col md:flex-row justify-between items-center gap-4"
           >
             <div
-              class="flex gap-3 border border-[#5d6a6e] rounded-md px-3 py-2"
+              class="flex gap-3 justify-center items-center border border-[#5d6a6e] rounded-md px-3 py-2"
             >
               <button
                 class="bg-[#249b00] text-white px-4 py-2 rounded-md font-bold text-sm md:text-base"
@@ -1403,7 +1859,9 @@
             class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-16 w-full justify-center"
           >
             <!-- Branch Item -->
+            <!-- first branch -->
             <div
+              id="branch-Modal"
               class="branch-item bg-white p-4 rounded-lg shadow-md flex justify-between gap-2.5 items-center w-full sm:w-[320px] md:w-[370px]"
             >
               <div class="flex gap-4">
@@ -1420,6 +1878,39 @@
               <div class="text-center">
                 <p class="text-[#181d1f] font-bold text-xl">87</p>
                 <p class="text-gray-500 text-sm">Members</p>
+              </div>
+            </div>
+            <!-- first branch modal -->
+            <div
+              id="branch-Modal"
+              class="modal w"
+              tabindex="-1"
+              role="dialog branch-Modal"
+            >
+              <div class="modal-dialog w-[1010px] mx-auto" role="document">
+                <!-- Reduced modal width -->
+                <div class="modal-content">
+                  <div class="modal-header bg-[#0b0f08]">
+                    <button
+                      type="button"
+                      class="close"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                    >
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body items-center"></div>
+                  <div class="modal-footer flex justify-center">
+                    <button
+                      type="button"
+                      class="btn btn-secondary hover:bg-gray-700 hover:text-white px-4 py-2 rounded"
+                      data-dismiss="modal"
+                    >
+                      Cancel
+                    </button>
+                  </div>
+                </div>
               </div>
             </div>
             <div
@@ -1480,7 +1971,7 @@
               </div>
             </div>
             <div
-              class="branch-item bg-white p-4 rounded-lg hidden md:block shadow-md md:flex justify-between gap-2.5 items-center w-full sm:w-[320px] md:w-[370px]"
+              class="branch-item active bg-white p-4 rounded-lg hidden md:block shadow-md md:flex justify-between gap-2.5 items-center w-full sm:w-[320px] md:w-[370px]"
             >
               <div class="flex gap-4">
                 <div
@@ -2529,7 +3020,7 @@
       </div>
 
       <!-- Blogs Grid Section -->
-      <section
+      <div
         class="max-w-[1170px] mx-auto px-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16"
       >
         <!-- Blog 1 (Large) -->
@@ -2645,7 +3136,7 @@
             </p>
           </div>
         </div>
-      </section>
+      </div>
     </div>
 
     <footer class="bg-[#040f00] text-[#96a5aa] py-12">
